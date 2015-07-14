@@ -6,8 +6,9 @@ using NUnit.Framework;
 using GeoDB.Presenter;
 using GeoDB.Service.DataAccess.Interface;
 using GeoDB.Model;
-using NSubstitute;
+
 using GeoDbUserInterface.ServiceInterfaces;
+using NSubstitute;
 
 namespace GeoDBTests
 {

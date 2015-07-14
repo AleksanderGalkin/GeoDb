@@ -7,9 +7,12 @@ using GeoDB.Model;
 using System.Windows.Forms;
 using System.Transactions;
 using GeoDbUserInterface.View;
+using GeoDB.Service.Security;
+using System.Security.Permissions;
 
 namespace GeoDB.Presenter
 {
+    [AnyRolePermissionAttribute(SecurityAction.Demand, Roles = "GDB_BL_ADM")]
     public class PAssays2Crud
     {
         private IViewAssays2Crud _view;

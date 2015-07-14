@@ -72,13 +72,13 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net">
-      <HintPath>..\..\..\Install\programming\log4net-1.2.13\bin\net\4.0\release\log4net.dll</HintPath>
+      <HintPath>..\..\..\..\Install\log4net-1.2.13\bin\net\4.0\release\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Ninject">
-      <HintPath>..\..\..\Install\programming\Ninject-3.0.0.15-release-net-4.0\Ninject.dll</HintPath>
+      <HintPath>..\..\..\Ninject-3.0.0.15-release-net-4.0\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
-      <HintPath>..\..\..\Install\programming\NSubstitute-1.4.3.0\lib\NET40\NSubstitute.dll</HintPath>
+      <HintPath>..\..\..\..\Install\NSubstitute-1.4.3.0\lib\NET40\NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

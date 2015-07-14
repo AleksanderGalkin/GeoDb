@@ -174,7 +174,7 @@ namespace GeoDB.Presenter
 
     }
 
-    [AnyRolePermissionAttribute(SecurityAction.Demand, Roles = "GDB_BL_ADM,GDB_BL_GEO_ADV")]
+    [AnyRolePermissionAttribute(SecurityAction.Demand, Roles = "GDB_BL_GEO_ADV")]
 
     public class PDrillHoles : IPresenter
     {
