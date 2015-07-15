@@ -17,7 +17,10 @@ namespace GeoDBWinForms
         {
             InitializeComponent();
         }
-
+        public Icon favicon
+        {
+            set { this.Icon = value; }
+        }
         public List<string> userNames 
         {
             set
@@ -114,6 +117,7 @@ namespace GeoDBWinForms
 
         public event EventHandler<EventArgs> clickOk;
         public event EventHandler<EventArgs> clickCancel;
+        public event EventHandler<EventArgs> clickSeekSqlServers;
 
         public new void Show()
         {
@@ -147,6 +151,8 @@ namespace GeoDBWinForms
             }
         }
 
+
+
         private void rbServer_CheckedChanged(object sender, EventArgs e)
         {
             
@@ -169,7 +175,7 @@ namespace GeoDBWinForms
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
 
             openFileDialog1.InitialDirectory = "c:\\";
-            openFileDialog1.Filter = "MS SQL DBF files(*.mdf)|*.mdf|All files (*.*)|*.*";
+            openFileDialog1.Filter = "MS SQL MDF files(*.mdf)|*.mdf|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 1;
             openFileDialog1.RestoreDirectory = true;
             openFileDialog1.Multiselect = false;
@@ -193,8 +199,13 @@ namespace GeoDBWinForms
             tbPassword.Enabled = !isWindowsAuthentication;
         }
 
-
-
- 
+        private void btSqlServerNames_Click(object sender, EventArgs e)
+        {
+            var ev = clickSeekSqlServers;
+            if (ev != null)
+            {
+                ev(this, EventArgs.Empty);
+            }
+        }
     }
 }

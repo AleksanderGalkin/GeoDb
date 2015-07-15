@@ -319,12 +319,13 @@ namespace GeoDB.Presenter
         }
         private void OnClickAssaysCreateData(object sender, EventArgs e)
         {
-            _preAssays2Crud.ShowCreate(_broAssays.GetForeignKey(),mdiParent,_view);
-            _broAssays.Refresh();
+           _preAssays2Crud.ShowCreate(_broAssays.GetForeignKey(), mdiParent, _view);
+           _broAssays.Refresh();
         }
 
         private void OnClickAssaysEditData(object sender, ANumRowEventArgs e)
         {
+           
             _preAssays2Crud.ShowModify(e.numRow, mdiParent, _view);
             _broAssays.Refresh();
         }

@@ -11,6 +11,7 @@ namespace GeoDbUserInterface.View
     {
 
         List<IPopup> navigatorMenuSettings {  set; }
+        Icon favicon { set; }
         Image logo { set; }
 
         void addChildMenu(IPopup childMenuSettings);

@@ -32,6 +32,10 @@ namespace GeoDBWinForms
             this.SetToolMenu();
             this.Controls.Add(this.navMenu);
         }
+        public Icon favicon
+        {
+            set { this.Icon = value; }
+        }
         public Image logo { set; private get; }
         public List<IPopup> navigatorMenuSettings 
         {

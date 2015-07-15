@@ -127,12 +127,18 @@ namespace GeoDB.Presenter
 
         public void Show()
         {
+            if (MySecurity.state != MySecurity.MySecurityState.success)
+            {
+                return;
+            }
+            _mainView.favicon = Resources.favicon;
             _mainView.logo = GeoDB.Resources.logo;
             _mainView.navigatorMenuSettings = this.CreateMenu();
             try
             {
-            _mainView.Show();
-            }   
+                _mainView.Show();
+            }
+
             catch (Exception ex)
             {
                 string messageInner = ex.InnerException != null ? ex.InnerException.ToString() : "";

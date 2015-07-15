@@ -9,10 +9,13 @@ using System.Transactions;
 using GeoDbUserInterface.View;
 using GeoDB.Service.Security;
 using System.Security.Permissions;
+using System.Security;
+using Ninject.Parameters;
+using Ninject;
 
 namespace GeoDB.Presenter
 {
-    [AnyRolePermissionAttribute(SecurityAction.Demand, Roles = "GDB_BL_ADM")]
+   
     public class PAssays2Crud
     {
         private IViewAssays2Crud _view;
@@ -55,14 +58,14 @@ namespace GeoDB.Presenter
 
             _view.clickOk+=new EventHandler<EventArgs>(OnClickOk);
             _view.clickCloseForm += new EventHandler<EventArgs>(OnClickCloseForm);
-
-
-
-
-            
         }
+
+        //[AnyRolePermissionAttribute(SecurityAction.Demand, Roles = "GDB_BL_ADM")]
         private void OnClickOk(object sender,EventArgs e)
         {
+
+            if (!ImperativeRolePermission.currentPrincipalInRoles("GDB_BL_GEO_ADV"))
+                return;
 
                 ASSAYS2 obj;
                 if ( modeFormData._mode == ModeFormEnum.creating)
@@ -125,7 +128,12 @@ namespace GeoDB.Presenter
                 {
                     ev(this, EventArgs.Empty);
                 }
+
+            
             _view.Close();
+
+
+
         }
         private void OnClickCloseForm(object sender, EventArgs e)
         {

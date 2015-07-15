@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -7,6 +8,7 @@ namespace GeoDbUserInterface.View
 {
     public interface IViewLogin
     {
+        Icon favicon { set; }
         List<string> userNames { set;}
         string userName { get; set; }
         string password { get; set; }
@@ -21,6 +23,7 @@ namespace GeoDbUserInterface.View
 
         event EventHandler<EventArgs> clickOk;
         event EventHandler<EventArgs> clickCancel;
+        event EventHandler<EventArgs> clickSeekSqlServers;
         bool propVisible {get;set;}
         void Show();
         void Close();
