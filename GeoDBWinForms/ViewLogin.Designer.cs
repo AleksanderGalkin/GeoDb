@@ -39,7 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.gbServerOrDesktop = new System.Windows.Forms.GroupBox();
-            this.btSqlServerNames = new System.Windows.Forms.Button();
             this.btDbFileName = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.cbDbFileName = new System.Windows.Forms.ComboBox();
@@ -144,7 +143,6 @@
             // 
             // gbServerOrDesktop
             // 
-            this.gbServerOrDesktop.Controls.Add(this.btSqlServerNames);
             this.gbServerOrDesktop.Controls.Add(this.btDbFileName);
             this.gbServerOrDesktop.Controls.Add(this.label5);
             this.gbServerOrDesktop.Controls.Add(this.cbDbFileName);
@@ -160,16 +158,6 @@
             this.gbServerOrDesktop.TabIndex = 13;
             this.gbServerOrDesktop.TabStop = false;
             this.gbServerOrDesktop.Text = "Database location";
-            // 
-            // btSqlServerNames
-            // 
-            this.btSqlServerNames.Location = new System.Drawing.Point(351, 21);
-            this.btSqlServerNames.Name = "btSqlServerNames";
-            this.btSqlServerNames.Size = new System.Drawing.Size(29, 24);
-            this.btSqlServerNames.TabIndex = 18;
-            this.btSqlServerNames.Text = "...";
-            this.btSqlServerNames.UseVisualStyleBackColor = true;
-            this.btSqlServerNames.Click += new System.EventHandler(this.btSqlServerNames_Click);
             // 
             // btDbFileName
             // 
@@ -307,6 +295,5 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbSQLAuthentication;
         private System.Windows.Forms.RadioButton rbWindowsAuthentication;
-        private System.Windows.Forms.Button btSqlServerNames;
     }
 }

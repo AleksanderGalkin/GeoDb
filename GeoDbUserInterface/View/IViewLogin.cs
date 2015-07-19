@@ -23,7 +23,6 @@ namespace GeoDbUserInterface.View
 
         event EventHandler<EventArgs> clickOk;
         event EventHandler<EventArgs> clickCancel;
-        event EventHandler<EventArgs> clickSeekSqlServers;
         bool propVisible {get;set;}
         void Show();
         void Close();

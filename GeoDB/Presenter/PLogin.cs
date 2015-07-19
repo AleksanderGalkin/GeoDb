@@ -34,7 +34,6 @@ namespace GeoDB.Presenter
             _connectionString = "";
             _view.clickOk +=new EventHandler<EventArgs>(On_view_clickOk);
             _view.clickCancel += new EventHandler<EventArgs>(On_view_clickCancel);
-            _view.clickSeekSqlServers += new EventHandler<EventArgs>(On_view_clickSeekSqlServers);
             
         isShowed = false;
         }
@@ -68,20 +67,7 @@ namespace GeoDB.Presenter
             _view.Close();
         }
 
-        private void On_view_clickSeekSqlServers(object sender, EventArgs e)
-        {
-            List < string >  listOfServers = new List<string>();
-            System.Data.DataTable dt = SqlDataSourceEnumerator.Instance.GetDataSources();
-            dt = SqlDataSourceEnumerator.Instance.GetDataSources();
-            System.Data.DataRow[] rows = dt.Select();
 
-            foreach (System.Data.DataRow dr in dt.Rows)
-            {
-                //Вывод найденной информации о серверах
-                //в элемент управления СomboBox.
-                listOfServers.Add(string.Concat(dr["ServerName"], "\\", dr["InstanceName"]));
-            }
-        }
         public string GetConnectionString()
         {
             if (_connectionString != string.Empty)

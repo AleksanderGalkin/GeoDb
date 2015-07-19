@@ -199,13 +199,6 @@ namespace GeoDBWinForms
             tbPassword.Enabled = !isWindowsAuthentication;
         }
 
-        private void btSqlServerNames_Click(object sender, EventArgs e)
-        {
-            var ev = clickSeekSqlServers;
-            if (ev != null)
-            {
-                ev(this, EventArgs.Empty);
-            }
-        }
+       
     }
 }
