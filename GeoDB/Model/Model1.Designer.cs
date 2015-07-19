@@ -1511,7 +1511,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -1530,7 +1530,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -1555,7 +1555,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -1579,7 +1579,7 @@ namespace GeoDB.Model
             {
                 OnKEYChanging(value);
                 ReportPropertyChanging("KEY");
-                _KEY = StructuralObject.SetValidValue(value, true);
+                _KEY = StructuralObject.SetValidValue(value, true, "KEY");
                 ReportPropertyChanged("KEY");
                 OnKEYChanged();
             }
@@ -1603,7 +1603,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -1627,7 +1627,7 @@ namespace GeoDB.Model
             {
                 OnFROMChanging(value);
                 ReportPropertyChanging("FROM");
-                _FROM = StructuralObject.SetValidValue(value);
+                _FROM = StructuralObject.SetValidValue(value, "FROM");
                 ReportPropertyChanged("FROM");
                 OnFROMChanged();
             }
@@ -1651,7 +1651,7 @@ namespace GeoDB.Model
             {
                 OnTOChanging(value);
                 ReportPropertyChanging("TO");
-                _TO = StructuralObject.SetValidValue(value);
+                _TO = StructuralObject.SetValidValue(value, "TO");
                 ReportPropertyChanged("TO");
                 OnTOChanged();
             }
@@ -1675,7 +1675,7 @@ namespace GeoDB.Model
             {
                 OnLENGTHChanging(value);
                 ReportPropertyChanging("LENGTH");
-                _LENGTH = StructuralObject.SetValidValue(value);
+                _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                 ReportPropertyChanged("LENGTH");
                 OnLENGTHChanged();
             }
@@ -1699,7 +1699,7 @@ namespace GeoDB.Model
             {
                 OnRESERVERS_BLOCKChanging(value);
                 ReportPropertyChanging("RESERVERS_BLOCK");
-                _RESERVERS_BLOCK = StructuralObject.SetValidValue(value);
+                _RESERVERS_BLOCK = StructuralObject.SetValidValue(value, "RESERVERS_BLOCK");
                 ReportPropertyChanged("RESERVERS_BLOCK");
                 OnRESERVERS_BLOCKChanged();
             }
@@ -1723,7 +1723,7 @@ namespace GeoDB.Model
             {
                 OnROCKChanging(value);
                 ReportPropertyChanging("ROCK");
-                _ROCK = StructuralObject.SetValidValue(value);
+                _ROCK = StructuralObject.SetValidValue(value, "ROCK");
                 ReportPropertyChanged("ROCK");
                 OnROCKChanged();
             }
@@ -1747,7 +1747,7 @@ namespace GeoDB.Model
             {
                 OnRANGChanging(value);
                 ReportPropertyChanging("RANG");
-                _RANG = StructuralObject.SetValidValue(value);
+                _RANG = StructuralObject.SetValidValue(value, "RANG");
                 ReportPropertyChanged("RANG");
                 OnRANGChanged();
             }
@@ -1771,7 +1771,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -1795,7 +1795,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value);
+                _Au = StructuralObject.SetValidValue(value, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -1819,7 +1819,7 @@ namespace GeoDB.Model
             {
                 OnAu_cutChanging(value);
                 ReportPropertyChanging("Au_cut");
-                _Au_cut = StructuralObject.SetValidValue(value);
+                _Au_cut = StructuralObject.SetValidValue(value, "Au_cut");
                 ReportPropertyChanged("Au_cut");
                 OnAu_cutChanged();
             }
@@ -1843,7 +1843,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -1867,7 +1867,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value);
+                _BLANK_ID = StructuralObject.SetValidValue(value, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -1891,7 +1891,7 @@ namespace GeoDB.Model
             {
                 OnJOURNALChanging(value);
                 ReportPropertyChanging("JOURNAL");
-                _JOURNAL = StructuralObject.SetValidValue(value);
+                _JOURNAL = StructuralObject.SetValidValue(value, "JOURNAL");
                 ReportPropertyChanged("JOURNAL");
                 OnJOURNALChanged();
             }
@@ -1915,7 +1915,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -1939,7 +1939,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -1963,7 +1963,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -1987,7 +1987,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -1998,7 +1998,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -2300,7 +2299,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2319,7 +2318,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -2344,7 +2343,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -2368,7 +2367,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -2392,7 +2391,7 @@ namespace GeoDB.Model
             {
                 OnSECTORChanging(value);
                 ReportPropertyChanging("SECTOR");
-                _SECTOR = StructuralObject.SetValidValue(value);
+                _SECTOR = StructuralObject.SetValidValue(value, "SECTOR");
                 ReportPropertyChanged("SECTOR");
                 OnSECTORChanged();
             }
@@ -2416,7 +2415,7 @@ namespace GeoDB.Model
             {
                 OnFROMChanging(value);
                 ReportPropertyChanging("FROM");
-                _FROM = StructuralObject.SetValidValue(value);
+                _FROM = StructuralObject.SetValidValue(value, "FROM");
                 ReportPropertyChanged("FROM");
                 OnFROMChanged();
             }
@@ -2440,7 +2439,7 @@ namespace GeoDB.Model
             {
                 OnTOChanging(value);
                 ReportPropertyChanging("TO");
-                _TO = StructuralObject.SetValidValue(value);
+                _TO = StructuralObject.SetValidValue(value, "TO");
                 ReportPropertyChanged("TO");
                 OnTOChanged();
             }
@@ -2464,7 +2463,7 @@ namespace GeoDB.Model
             {
                 OnLENGTHChanging(value);
                 ReportPropertyChanging("LENGTH");
-                _LENGTH = StructuralObject.SetValidValue(value);
+                _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                 ReportPropertyChanged("LENGTH");
                 OnLENGTHChanged();
             }
@@ -2488,7 +2487,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -2512,7 +2511,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value);
+                _Au = StructuralObject.SetValidValue(value, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -2536,7 +2535,7 @@ namespace GeoDB.Model
             {
                 OnBLANKChanging(value);
                 ReportPropertyChanging("BLANK");
-                _BLANK = StructuralObject.SetValidValue(value);
+                _BLANK = StructuralObject.SetValidValue(value, "BLANK");
                 ReportPropertyChanged("BLANK");
                 OnBLANKChanged();
             }
@@ -2560,7 +2559,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -2584,7 +2583,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -2608,7 +2607,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -2632,7 +2631,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -2656,7 +2655,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -2667,7 +2666,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -2867,7 +2865,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -2886,7 +2884,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -2911,7 +2909,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -2935,7 +2933,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -2959,7 +2957,7 @@ namespace GeoDB.Model
             {
                 OnFROMChanging(value);
                 ReportPropertyChanging("FROM");
-                _FROM = StructuralObject.SetValidValue(value);
+                _FROM = StructuralObject.SetValidValue(value, "FROM");
                 ReportPropertyChanged("FROM");
                 OnFROMChanged();
             }
@@ -2983,7 +2981,7 @@ namespace GeoDB.Model
             {
                 OnTOChanging(value);
                 ReportPropertyChanging("TO");
-                _TO = StructuralObject.SetValidValue(value);
+                _TO = StructuralObject.SetValidValue(value, "TO");
                 ReportPropertyChanged("TO");
                 OnTOChanged();
             }
@@ -3007,7 +3005,7 @@ namespace GeoDB.Model
             {
                 OnLENGTHChanging(value);
                 ReportPropertyChanging("LENGTH");
-                _LENGTH = StructuralObject.SetValidValue(value);
+                _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                 ReportPropertyChanged("LENGTH");
                 OnLENGTHChanged();
             }
@@ -3031,7 +3029,7 @@ namespace GeoDB.Model
             {
                 OnROCKChanging(value);
                 ReportPropertyChanging("ROCK");
-                _ROCK = StructuralObject.SetValidValue(value);
+                _ROCK = StructuralObject.SetValidValue(value, "ROCK");
                 ReportPropertyChanged("ROCK");
                 OnROCKChanged();
             }
@@ -3055,7 +3053,7 @@ namespace GeoDB.Model
             {
                 OnRANGChanging(value);
                 ReportPropertyChanging("RANG");
-                _RANG = StructuralObject.SetValidValue(value);
+                _RANG = StructuralObject.SetValidValue(value, "RANG");
                 ReportPropertyChanged("RANG");
                 OnRANGChanged();
             }
@@ -3079,7 +3077,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -3103,7 +3101,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value);
+                _Au = StructuralObject.SetValidValue(value, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -3127,7 +3125,7 @@ namespace GeoDB.Model
             {
                 OnAu_cutChanging(value);
                 ReportPropertyChanging("Au_cut");
-                _Au_cut = StructuralObject.SetValidValue(value);
+                _Au_cut = StructuralObject.SetValidValue(value, "Au_cut");
                 ReportPropertyChanged("Au_cut");
                 OnAu_cutChanged();
             }
@@ -3151,7 +3149,7 @@ namespace GeoDB.Model
             {
                 OnAsChanging(value);
                 ReportPropertyChanging("As");
-                _As = StructuralObject.SetValidValue(value);
+                _As = StructuralObject.SetValidValue(value, "As");
                 ReportPropertyChanged("As");
                 OnAsChanged();
             }
@@ -3175,7 +3173,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value);
+                _Sb = StructuralObject.SetValidValue(value, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -3199,7 +3197,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value);
+                _S = StructuralObject.SetValidValue(value, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -3223,7 +3221,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value);
+                _Ca = StructuralObject.SetValidValue(value, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -3247,7 +3245,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value);
+                _Fe = StructuralObject.SetValidValue(value, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -3271,7 +3269,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value);
+                _Ag = StructuralObject.SetValidValue(value, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -3295,7 +3293,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value);
+                _C = StructuralObject.SetValidValue(value, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -3319,7 +3317,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -3343,7 +3341,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value);
+                _BLANK_ID = StructuralObject.SetValidValue(value, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -3367,7 +3365,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -3391,7 +3389,7 @@ namespace GeoDB.Model
             {
                 OnPITChanging(value);
                 ReportPropertyChanging("PIT");
-                _PIT = StructuralObject.SetValidValue(value, true);
+                _PIT = StructuralObject.SetValidValue(value, true, "PIT");
                 ReportPropertyChanged("PIT");
                 OnPITChanged();
             }
@@ -3415,7 +3413,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -3439,7 +3437,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -3450,7 +3448,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -3482,7 +3479,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -3501,7 +3498,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -3526,7 +3523,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -3550,7 +3547,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -3574,7 +3571,7 @@ namespace GeoDB.Model
             {
                 OnSECTORChanging(value);
                 ReportPropertyChanging("SECTOR");
-                _SECTOR = StructuralObject.SetValidValue(value);
+                _SECTOR = StructuralObject.SetValidValue(value, "SECTOR");
                 ReportPropertyChanged("SECTOR");
                 OnSECTORChanged();
             }
@@ -3598,7 +3595,7 @@ namespace GeoDB.Model
             {
                 OnFROMChanging(value);
                 ReportPropertyChanging("FROM");
-                _FROM = StructuralObject.SetValidValue(value);
+                _FROM = StructuralObject.SetValidValue(value, "FROM");
                 ReportPropertyChanged("FROM");
                 OnFROMChanged();
             }
@@ -3622,7 +3619,7 @@ namespace GeoDB.Model
             {
                 OnTOChanging(value);
                 ReportPropertyChanging("TO");
-                _TO = StructuralObject.SetValidValue(value);
+                _TO = StructuralObject.SetValidValue(value, "TO");
                 ReportPropertyChanged("TO");
                 OnTOChanged();
             }
@@ -3646,7 +3643,7 @@ namespace GeoDB.Model
             {
                 OnLENGTHChanging(value);
                 ReportPropertyChanging("LENGTH");
-                _LENGTH = StructuralObject.SetValidValue(value);
+                _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                 ReportPropertyChanged("LENGTH");
                 OnLENGTHChanged();
             }
@@ -3670,7 +3667,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -3694,7 +3691,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value);
+                _Au = StructuralObject.SetValidValue(value, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -3718,7 +3715,7 @@ namespace GeoDB.Model
             {
                 OnAu_CutChanging(value);
                 ReportPropertyChanging("Au_Cut");
-                _Au_Cut = StructuralObject.SetValidValue(value);
+                _Au_Cut = StructuralObject.SetValidValue(value, "Au_Cut");
                 ReportPropertyChanged("Au_Cut");
                 OnAu_CutChanged();
             }
@@ -3742,7 +3739,7 @@ namespace GeoDB.Model
             {
                 OnAsChanging(value);
                 ReportPropertyChanging("As");
-                _As = StructuralObject.SetValidValue(value);
+                _As = StructuralObject.SetValidValue(value, "As");
                 ReportPropertyChanged("As");
                 OnAsChanged();
             }
@@ -3766,7 +3763,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value);
+                _Sb = StructuralObject.SetValidValue(value, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -3790,7 +3787,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value);
+                _S = StructuralObject.SetValidValue(value, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -3814,7 +3811,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value);
+                _Ca = StructuralObject.SetValidValue(value, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -3838,7 +3835,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value);
+                _Fe = StructuralObject.SetValidValue(value, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -3862,7 +3859,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value);
+                _Ag = StructuralObject.SetValidValue(value, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -3886,7 +3883,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value);
+                _C = StructuralObject.SetValidValue(value, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -3910,7 +3907,7 @@ namespace GeoDB.Model
             {
                 OnBLANKChanging(value);
                 ReportPropertyChanging("BLANK");
-                _BLANK = StructuralObject.SetValidValue(value);
+                _BLANK = StructuralObject.SetValidValue(value, "BLANK");
                 ReportPropertyChanged("BLANK");
                 OnBLANKChanged();
             }
@@ -3934,7 +3931,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -3958,7 +3955,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -3982,7 +3979,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -4006,7 +4003,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -4017,7 +4014,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -4143,7 +4139,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -4162,7 +4158,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -4187,7 +4183,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -4211,7 +4207,7 @@ namespace GeoDB.Model
             {
                 OnKEYChanging(value);
                 ReportPropertyChanging("KEY");
-                _KEY = StructuralObject.SetValidValue(value, true);
+                _KEY = StructuralObject.SetValidValue(value, true, "KEY");
                 ReportPropertyChanged("KEY");
                 OnKEYChanged();
             }
@@ -4235,7 +4231,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -4259,7 +4255,7 @@ namespace GeoDB.Model
             {
                 OnFROMChanging(value);
                 ReportPropertyChanging("FROM");
-                _FROM = StructuralObject.SetValidValue(value);
+                _FROM = StructuralObject.SetValidValue(value, "FROM");
                 ReportPropertyChanged("FROM");
                 OnFROMChanged();
             }
@@ -4283,7 +4279,7 @@ namespace GeoDB.Model
             {
                 OnTOChanging(value);
                 ReportPropertyChanging("TO");
-                _TO = StructuralObject.SetValidValue(value);
+                _TO = StructuralObject.SetValidValue(value, "TO");
                 ReportPropertyChanged("TO");
                 OnTOChanged();
             }
@@ -4307,7 +4303,7 @@ namespace GeoDB.Model
             {
                 OnLENGTHChanging(value);
                 ReportPropertyChanging("LENGTH");
-                _LENGTH = StructuralObject.SetValidValue(value);
+                _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                 ReportPropertyChanged("LENGTH");
                 OnLENGTHChanged();
             }
@@ -4331,7 +4327,7 @@ namespace GeoDB.Model
             {
                 OnRESERVERS_BLOCKChanging(value);
                 ReportPropertyChanging("RESERVERS_BLOCK");
-                _RESERVERS_BLOCK = StructuralObject.SetValidValue(value);
+                _RESERVERS_BLOCK = StructuralObject.SetValidValue(value, "RESERVERS_BLOCK");
                 ReportPropertyChanged("RESERVERS_BLOCK");
                 OnRESERVERS_BLOCKChanged();
             }
@@ -4355,7 +4351,7 @@ namespace GeoDB.Model
             {
                 OnROCKChanging(value);
                 ReportPropertyChanging("ROCK");
-                _ROCK = StructuralObject.SetValidValue(value);
+                _ROCK = StructuralObject.SetValidValue(value, "ROCK");
                 ReportPropertyChanged("ROCK");
                 OnROCKChanged();
             }
@@ -4379,7 +4375,7 @@ namespace GeoDB.Model
             {
                 OnRANGChanging(value);
                 ReportPropertyChanging("RANG");
-                _RANG = StructuralObject.SetValidValue(value);
+                _RANG = StructuralObject.SetValidValue(value, "RANG");
                 ReportPropertyChanged("RANG");
                 OnRANGChanged();
             }
@@ -4403,7 +4399,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -4427,7 +4423,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value);
+                _Au = StructuralObject.SetValidValue(value, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -4451,7 +4447,7 @@ namespace GeoDB.Model
             {
                 OnAu_cutChanging(value);
                 ReportPropertyChanging("Au_cut");
-                _Au_cut = StructuralObject.SetValidValue(value);
+                _Au_cut = StructuralObject.SetValidValue(value, "Au_cut");
                 ReportPropertyChanged("Au_cut");
                 OnAu_cutChanged();
             }
@@ -4475,7 +4471,7 @@ namespace GeoDB.Model
             {
                 OnAsChanging(value);
                 ReportPropertyChanging("As");
-                _As = StructuralObject.SetValidValue(value);
+                _As = StructuralObject.SetValidValue(value, "As");
                 ReportPropertyChanged("As");
                 OnAsChanged();
             }
@@ -4499,7 +4495,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value);
+                _Sb = StructuralObject.SetValidValue(value, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -4523,7 +4519,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value);
+                _S = StructuralObject.SetValidValue(value, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -4547,7 +4543,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value);
+                _Ca = StructuralObject.SetValidValue(value, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -4571,7 +4567,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value);
+                _Fe = StructuralObject.SetValidValue(value, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -4595,7 +4591,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value);
+                _Ag = StructuralObject.SetValidValue(value, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -4619,7 +4615,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value);
+                _C = StructuralObject.SetValidValue(value, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -4643,7 +4639,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -4667,7 +4663,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value);
+                _BLANK_ID = StructuralObject.SetValidValue(value, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -4691,7 +4687,7 @@ namespace GeoDB.Model
             {
                 OnJOURNALChanging(value);
                 ReportPropertyChanging("JOURNAL");
-                _JOURNAL = StructuralObject.SetValidValue(value);
+                _JOURNAL = StructuralObject.SetValidValue(value, "JOURNAL");
                 ReportPropertyChanged("JOURNAL");
                 OnJOURNALChanged();
             }
@@ -4715,7 +4711,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -4739,7 +4735,7 @@ namespace GeoDB.Model
             {
                 OnPITChanging(value);
                 ReportPropertyChanging("PIT");
-                _PIT = StructuralObject.SetValidValue(value, true);
+                _PIT = StructuralObject.SetValidValue(value, true, "PIT");
                 ReportPropertyChanged("PIT");
                 OnPITChanged();
             }
@@ -4763,7 +4759,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -4787,7 +4783,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -4811,7 +4807,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -4822,7 +4818,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -5122,7 +5117,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5141,7 +5136,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -5166,7 +5161,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -5190,7 +5185,7 @@ namespace GeoDB.Model
             {
                 OnKEYChanging(value);
                 ReportPropertyChanging("KEY");
-                _KEY = StructuralObject.SetValidValue(value, true);
+                _KEY = StructuralObject.SetValidValue(value, true, "KEY");
                 ReportPropertyChanged("KEY");
                 OnKEYChanged();
             }
@@ -5214,7 +5209,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -5238,7 +5233,7 @@ namespace GeoDB.Model
             {
                 OnFROMChanging(value);
                 ReportPropertyChanging("FROM");
-                _FROM = StructuralObject.SetValidValue(value);
+                _FROM = StructuralObject.SetValidValue(value, "FROM");
                 ReportPropertyChanged("FROM");
                 OnFROMChanged();
             }
@@ -5262,7 +5257,7 @@ namespace GeoDB.Model
             {
                 OnTOChanging(value);
                 ReportPropertyChanging("TO");
-                _TO = StructuralObject.SetValidValue(value);
+                _TO = StructuralObject.SetValidValue(value, "TO");
                 ReportPropertyChanged("TO");
                 OnTOChanged();
             }
@@ -5286,7 +5281,7 @@ namespace GeoDB.Model
             {
                 OnLENGTHChanging(value);
                 ReportPropertyChanging("LENGTH");
-                _LENGTH = StructuralObject.SetValidValue(value);
+                _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                 ReportPropertyChanged("LENGTH");
                 OnLENGTHChanged();
             }
@@ -5310,7 +5305,7 @@ namespace GeoDB.Model
             {
                 OnRESERVERS_BLOCKChanging(value);
                 ReportPropertyChanging("RESERVERS_BLOCK");
-                _RESERVERS_BLOCK = StructuralObject.SetValidValue(value);
+                _RESERVERS_BLOCK = StructuralObject.SetValidValue(value, "RESERVERS_BLOCK");
                 ReportPropertyChanged("RESERVERS_BLOCK");
                 OnRESERVERS_BLOCKChanged();
             }
@@ -5334,7 +5329,7 @@ namespace GeoDB.Model
             {
                 OnROCKChanging(value);
                 ReportPropertyChanging("ROCK");
-                _ROCK = StructuralObject.SetValidValue(value);
+                _ROCK = StructuralObject.SetValidValue(value, "ROCK");
                 ReportPropertyChanged("ROCK");
                 OnROCKChanged();
             }
@@ -5358,7 +5353,7 @@ namespace GeoDB.Model
             {
                 OnRANGChanging(value);
                 ReportPropertyChanging("RANG");
-                _RANG = StructuralObject.SetValidValue(value);
+                _RANG = StructuralObject.SetValidValue(value, "RANG");
                 ReportPropertyChanged("RANG");
                 OnRANGChanged();
             }
@@ -5382,7 +5377,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -5406,7 +5401,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value);
+                _Au = StructuralObject.SetValidValue(value, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -5430,7 +5425,7 @@ namespace GeoDB.Model
             {
                 OnAu_cutChanging(value);
                 ReportPropertyChanging("Au_cut");
-                _Au_cut = StructuralObject.SetValidValue(value);
+                _Au_cut = StructuralObject.SetValidValue(value, "Au_cut");
                 ReportPropertyChanged("Au_cut");
                 OnAu_cutChanged();
             }
@@ -5454,7 +5449,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -5478,7 +5473,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value);
+                _BLANK_ID = StructuralObject.SetValidValue(value, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -5502,7 +5497,7 @@ namespace GeoDB.Model
             {
                 OnJOURNALChanging(value);
                 ReportPropertyChanging("JOURNAL");
-                _JOURNAL = StructuralObject.SetValidValue(value);
+                _JOURNAL = StructuralObject.SetValidValue(value, "JOURNAL");
                 ReportPropertyChanged("JOURNAL");
                 OnJOURNALChanged();
             }
@@ -5526,7 +5521,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -5550,7 +5545,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -5574,7 +5569,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -5598,7 +5593,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -5609,7 +5604,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -5677,7 +5671,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5696,7 +5690,7 @@ namespace GeoDB.Model
                 {
                     OnRESERVERS_BLOCKChanging(value);
                     ReportPropertyChanging("RESERVERS_BLOCK");
-                    _RESERVERS_BLOCK = StructuralObject.SetValidValue(value);
+                    _RESERVERS_BLOCK = StructuralObject.SetValidValue(value, "RESERVERS_BLOCK");
                     ReportPropertyChanged("RESERVERS_BLOCK");
                     OnRESERVERS_BLOCKChanged();
                 }
@@ -5721,7 +5715,7 @@ namespace GeoDB.Model
             {
                 OnCATEGORYChanging(value);
                 ReportPropertyChanging("CATEGORY");
-                _CATEGORY = StructuralObject.SetValidValue(value, true);
+                _CATEGORY = StructuralObject.SetValidValue(value, true, "CATEGORY");
                 ReportPropertyChanged("CATEGORY");
                 OnCATEGORYChanged();
             }
@@ -5745,7 +5739,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -5769,7 +5763,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -5793,7 +5787,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -5804,7 +5798,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -5894,7 +5887,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -5913,7 +5906,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -5938,7 +5931,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value, false);
+                _BHID = StructuralObject.SetValidValue(value, false, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -5962,7 +5955,7 @@ namespace GeoDB.Model
             {
                 OnBENCH_IDChanging(value);
                 ReportPropertyChanging("BENCH_ID");
-                _BENCH_ID = StructuralObject.SetValidValue(value);
+                _BENCH_ID = StructuralObject.SetValidValue(value, "BENCH_ID");
                 ReportPropertyChanged("BENCH_ID");
                 OnBENCH_IDChanged();
             }
@@ -5986,7 +5979,7 @@ namespace GeoDB.Model
             {
                 OnLINE_IDChanging(value);
                 ReportPropertyChanging("LINE_ID");
-                _LINE_ID = StructuralObject.SetValidValue(value);
+                _LINE_ID = StructuralObject.SetValidValue(value, "LINE_ID");
                 ReportPropertyChanged("LINE_ID");
                 OnLINE_IDChanged();
             }
@@ -6010,7 +6003,7 @@ namespace GeoDB.Model
             {
                 OnHOLE_IDChanging(value);
                 ReportPropertyChanging("HOLE_ID");
-                _HOLE_ID = StructuralObject.SetValidValue(value);
+                _HOLE_ID = StructuralObject.SetValidValue(value, "HOLE_ID");
                 ReportPropertyChanged("HOLE_ID");
                 OnHOLE_IDChanged();
             }
@@ -6034,7 +6027,7 @@ namespace GeoDB.Model
             {
                 OnXCOLLARChanging(value);
                 ReportPropertyChanging("XCOLLAR");
-                _XCOLLAR = StructuralObject.SetValidValue(value);
+                _XCOLLAR = StructuralObject.SetValidValue(value, "XCOLLAR");
                 ReportPropertyChanged("XCOLLAR");
                 OnXCOLLARChanged();
             }
@@ -6058,7 +6051,7 @@ namespace GeoDB.Model
             {
                 OnYCOLLARChanging(value);
                 ReportPropertyChanging("YCOLLAR");
-                _YCOLLAR = StructuralObject.SetValidValue(value);
+                _YCOLLAR = StructuralObject.SetValidValue(value, "YCOLLAR");
                 ReportPropertyChanged("YCOLLAR");
                 OnYCOLLARChanged();
             }
@@ -6082,7 +6075,7 @@ namespace GeoDB.Model
             {
                 OnZCOLLARChanging(value);
                 ReportPropertyChanging("ZCOLLAR");
-                _ZCOLLAR = StructuralObject.SetValidValue(value);
+                _ZCOLLAR = StructuralObject.SetValidValue(value, "ZCOLLAR");
                 ReportPropertyChanged("ZCOLLAR");
                 OnZCOLLARChanged();
             }
@@ -6106,7 +6099,7 @@ namespace GeoDB.Model
             {
                 OnENDDEPTHChanging(value);
                 ReportPropertyChanging("ENDDEPTH");
-                _ENDDEPTH = StructuralObject.SetValidValue(value);
+                _ENDDEPTH = StructuralObject.SetValidValue(value, "ENDDEPTH");
                 ReportPropertyChanged("ENDDEPTH");
                 OnENDDEPTHChanged();
             }
@@ -6130,7 +6123,7 @@ namespace GeoDB.Model
             {
                 OnDRILL_TYPEChanging(value);
                 ReportPropertyChanging("DRILL_TYPE");
-                _DRILL_TYPE = StructuralObject.SetValidValue(value);
+                _DRILL_TYPE = StructuralObject.SetValidValue(value, "DRILL_TYPE");
                 ReportPropertyChanged("DRILL_TYPE");
                 OnDRILL_TYPEChanged();
             }
@@ -6154,7 +6147,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -6178,7 +6171,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -6202,7 +6195,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -6213,7 +6206,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -6427,7 +6419,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -6446,7 +6438,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -6471,7 +6463,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value, false);
+                _BHID = StructuralObject.SetValidValue(value, false, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -6495,7 +6487,7 @@ namespace GeoDB.Model
             {
                 OnXCOLLARChanging(value);
                 ReportPropertyChanging("XCOLLAR");
-                _XCOLLAR = StructuralObject.SetValidValue(value);
+                _XCOLLAR = StructuralObject.SetValidValue(value, "XCOLLAR");
                 ReportPropertyChanged("XCOLLAR");
                 OnXCOLLARChanged();
             }
@@ -6519,7 +6511,7 @@ namespace GeoDB.Model
             {
                 OnYCOLLARChanging(value);
                 ReportPropertyChanging("YCOLLAR");
-                _YCOLLAR = StructuralObject.SetValidValue(value);
+                _YCOLLAR = StructuralObject.SetValidValue(value, "YCOLLAR");
                 ReportPropertyChanged("YCOLLAR");
                 OnYCOLLARChanged();
             }
@@ -6543,7 +6535,7 @@ namespace GeoDB.Model
             {
                 OnZCOLLARChanging(value);
                 ReportPropertyChanging("ZCOLLAR");
-                _ZCOLLAR = StructuralObject.SetValidValue(value);
+                _ZCOLLAR = StructuralObject.SetValidValue(value, "ZCOLLAR");
                 ReportPropertyChanged("ZCOLLAR");
                 OnZCOLLARChanged();
             }
@@ -6567,7 +6559,7 @@ namespace GeoDB.Model
             {
                 OnENDDEPTHChanging(value);
                 ReportPropertyChanging("ENDDEPTH");
-                _ENDDEPTH = StructuralObject.SetValidValue(value);
+                _ENDDEPTH = StructuralObject.SetValidValue(value, "ENDDEPTH");
                 ReportPropertyChanged("ENDDEPTH");
                 OnENDDEPTHChanged();
             }
@@ -6591,7 +6583,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -6615,7 +6607,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -6639,7 +6631,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -6650,7 +6642,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -6736,7 +6727,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -6755,7 +6746,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -6780,7 +6771,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value, false);
+                _BHID = StructuralObject.SetValidValue(value, false, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -6804,7 +6795,7 @@ namespace GeoDB.Model
             {
                 OnXCOLLARChanging(value);
                 ReportPropertyChanging("XCOLLAR");
-                _XCOLLAR = StructuralObject.SetValidValue(value);
+                _XCOLLAR = StructuralObject.SetValidValue(value, "XCOLLAR");
                 ReportPropertyChanged("XCOLLAR");
                 OnXCOLLARChanged();
             }
@@ -6828,7 +6819,7 @@ namespace GeoDB.Model
             {
                 OnYCOLLARChanging(value);
                 ReportPropertyChanging("YCOLLAR");
-                _YCOLLAR = StructuralObject.SetValidValue(value);
+                _YCOLLAR = StructuralObject.SetValidValue(value, "YCOLLAR");
                 ReportPropertyChanged("YCOLLAR");
                 OnYCOLLARChanged();
             }
@@ -6852,7 +6843,7 @@ namespace GeoDB.Model
             {
                 OnZCOLLARChanging(value);
                 ReportPropertyChanging("ZCOLLAR");
-                _ZCOLLAR = StructuralObject.SetValidValue(value);
+                _ZCOLLAR = StructuralObject.SetValidValue(value, "ZCOLLAR");
                 ReportPropertyChanged("ZCOLLAR");
                 OnZCOLLARChanged();
             }
@@ -6876,7 +6867,7 @@ namespace GeoDB.Model
             {
                 OnENDDEPTHChanging(value);
                 ReportPropertyChanging("ENDDEPTH");
-                _ENDDEPTH = StructuralObject.SetValidValue(value);
+                _ENDDEPTH = StructuralObject.SetValidValue(value, "ENDDEPTH");
                 ReportPropertyChanged("ENDDEPTH");
                 OnENDDEPTHChanged();
             }
@@ -6900,7 +6891,7 @@ namespace GeoDB.Model
             {
                 OnDOMENChanging(value);
                 ReportPropertyChanging("DOMEN");
-                _DOMEN = StructuralObject.SetValidValue(value);
+                _DOMEN = StructuralObject.SetValidValue(value, "DOMEN");
                 ReportPropertyChanged("DOMEN");
                 OnDOMENChanged();
             }
@@ -6924,7 +6915,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -6948,7 +6939,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -6959,7 +6950,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -7037,7 +7027,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -7056,7 +7046,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -7081,7 +7071,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value, false);
+                _BHID = StructuralObject.SetValidValue(value, false, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -7105,7 +7095,7 @@ namespace GeoDB.Model
             {
                 OnXCOLLARChanging(value);
                 ReportPropertyChanging("XCOLLAR");
-                _XCOLLAR = StructuralObject.SetValidValue(value);
+                _XCOLLAR = StructuralObject.SetValidValue(value, "XCOLLAR");
                 ReportPropertyChanged("XCOLLAR");
                 OnXCOLLARChanged();
             }
@@ -7129,7 +7119,7 @@ namespace GeoDB.Model
             {
                 OnYCOLLARChanging(value);
                 ReportPropertyChanging("YCOLLAR");
-                _YCOLLAR = StructuralObject.SetValidValue(value);
+                _YCOLLAR = StructuralObject.SetValidValue(value, "YCOLLAR");
                 ReportPropertyChanged("YCOLLAR");
                 OnYCOLLARChanged();
             }
@@ -7153,7 +7143,7 @@ namespace GeoDB.Model
             {
                 OnZCOLLARChanging(value);
                 ReportPropertyChanging("ZCOLLAR");
-                _ZCOLLAR = StructuralObject.SetValidValue(value);
+                _ZCOLLAR = StructuralObject.SetValidValue(value, "ZCOLLAR");
                 ReportPropertyChanged("ZCOLLAR");
                 OnZCOLLARChanged();
             }
@@ -7177,7 +7167,7 @@ namespace GeoDB.Model
             {
                 OnENDDEPTHChanging(value);
                 ReportPropertyChanging("ENDDEPTH");
-                _ENDDEPTH = StructuralObject.SetValidValue(value);
+                _ENDDEPTH = StructuralObject.SetValidValue(value, "ENDDEPTH");
                 ReportPropertyChanged("ENDDEPTH");
                 OnENDDEPTHChanged();
             }
@@ -7201,7 +7191,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -7225,7 +7215,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -7249,7 +7239,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -7260,7 +7250,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -7354,7 +7343,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -7373,7 +7362,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -7398,7 +7387,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value, false);
+                _BHID = StructuralObject.SetValidValue(value, false, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -7422,7 +7411,7 @@ namespace GeoDB.Model
             {
                 OnBENCH_IDChanging(value);
                 ReportPropertyChanging("BENCH_ID");
-                _BENCH_ID = StructuralObject.SetValidValue(value);
+                _BENCH_ID = StructuralObject.SetValidValue(value, "BENCH_ID");
                 ReportPropertyChanged("BENCH_ID");
                 OnBENCH_IDChanged();
             }
@@ -7446,7 +7435,7 @@ namespace GeoDB.Model
             {
                 OnLINE_IDChanging(value);
                 ReportPropertyChanging("LINE_ID");
-                _LINE_ID = StructuralObject.SetValidValue(value);
+                _LINE_ID = StructuralObject.SetValidValue(value, "LINE_ID");
                 ReportPropertyChanged("LINE_ID");
                 OnLINE_IDChanged();
             }
@@ -7470,7 +7459,7 @@ namespace GeoDB.Model
             {
                 OnHOLE_IDChanging(value);
                 ReportPropertyChanging("HOLE_ID");
-                _HOLE_ID = StructuralObject.SetValidValue(value);
+                _HOLE_ID = StructuralObject.SetValidValue(value, "HOLE_ID");
                 ReportPropertyChanged("HOLE_ID");
                 OnHOLE_IDChanged();
             }
@@ -7494,7 +7483,7 @@ namespace GeoDB.Model
             {
                 OnXCOLLARChanging(value);
                 ReportPropertyChanging("XCOLLAR");
-                _XCOLLAR = StructuralObject.SetValidValue(value);
+                _XCOLLAR = StructuralObject.SetValidValue(value, "XCOLLAR");
                 ReportPropertyChanged("XCOLLAR");
                 OnXCOLLARChanged();
             }
@@ -7518,7 +7507,7 @@ namespace GeoDB.Model
             {
                 OnYCOLLARChanging(value);
                 ReportPropertyChanging("YCOLLAR");
-                _YCOLLAR = StructuralObject.SetValidValue(value);
+                _YCOLLAR = StructuralObject.SetValidValue(value, "YCOLLAR");
                 ReportPropertyChanged("YCOLLAR");
                 OnYCOLLARChanged();
             }
@@ -7542,7 +7531,7 @@ namespace GeoDB.Model
             {
                 OnZCOLLARChanging(value);
                 ReportPropertyChanging("ZCOLLAR");
-                _ZCOLLAR = StructuralObject.SetValidValue(value);
+                _ZCOLLAR = StructuralObject.SetValidValue(value, "ZCOLLAR");
                 ReportPropertyChanged("ZCOLLAR");
                 OnZCOLLARChanged();
             }
@@ -7566,7 +7555,7 @@ namespace GeoDB.Model
             {
                 OnENDDEPTHChanging(value);
                 ReportPropertyChanging("ENDDEPTH");
-                _ENDDEPTH = StructuralObject.SetValidValue(value);
+                _ENDDEPTH = StructuralObject.SetValidValue(value, "ENDDEPTH");
                 ReportPropertyChanged("ENDDEPTH");
                 OnENDDEPTHChanged();
             }
@@ -7590,7 +7579,7 @@ namespace GeoDB.Model
             {
                 OnDRILL_TYPEChanging(value);
                 ReportPropertyChanging("DRILL_TYPE");
-                _DRILL_TYPE = StructuralObject.SetValidValue(value);
+                _DRILL_TYPE = StructuralObject.SetValidValue(value, "DRILL_TYPE");
                 ReportPropertyChanged("DRILL_TYPE");
                 OnDRILL_TYPEChanged();
             }
@@ -7614,7 +7603,7 @@ namespace GeoDB.Model
             {
                 OnDOMENChanging(value);
                 ReportPropertyChanging("DOMEN");
-                _DOMEN = StructuralObject.SetValidValue(value);
+                _DOMEN = StructuralObject.SetValidValue(value, "DOMEN");
                 ReportPropertyChanged("DOMEN");
                 OnDOMENChanged();
             }
@@ -7638,7 +7627,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -7662,7 +7651,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -7686,7 +7675,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -7697,7 +7686,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -7905,7 +7893,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -7924,7 +7912,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -7949,7 +7937,7 @@ namespace GeoDB.Model
             {
                 OnDOMEN1Changing(value);
                 ReportPropertyChanging("DOMEN1");
-                _DOMEN1 = StructuralObject.SetValidValue(value, false);
+                _DOMEN1 = StructuralObject.SetValidValue(value, false, "DOMEN1");
                 ReportPropertyChanged("DOMEN1");
                 OnDOMEN1Changed();
             }
@@ -7973,7 +7961,7 @@ namespace GeoDB.Model
             {
                 OnURAGANChanging(value);
                 ReportPropertyChanging("URAGAN");
-                _URAGAN = StructuralObject.SetValidValue(value);
+                _URAGAN = StructuralObject.SetValidValue(value, "URAGAN");
                 ReportPropertyChanged("URAGAN");
                 OnURAGANChanged();
             }
@@ -7997,7 +7985,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -8021,7 +8009,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -8032,7 +8020,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -8110,7 +8097,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -8129,7 +8116,7 @@ namespace GeoDB.Model
                 {
                     OnDRILL_IDChanging(value);
                     ReportPropertyChanging("DRILL_ID");
-                    _DRILL_ID = StructuralObject.SetValidValue(value);
+                    _DRILL_ID = StructuralObject.SetValidValue(value, "DRILL_ID");
                     ReportPropertyChanged("DRILL_ID");
                     OnDRILL_IDChanged();
                 }
@@ -8154,7 +8141,7 @@ namespace GeoDB.Model
             {
                 OnDRILL_TYPEChanging(value);
                 ReportPropertyChanging("DRILL_TYPE");
-                _DRILL_TYPE = StructuralObject.SetValidValue(value, false);
+                _DRILL_TYPE = StructuralObject.SetValidValue(value, false, "DRILL_TYPE");
                 ReportPropertyChanged("DRILL_TYPE");
                 OnDRILL_TYPEChanged();
             }
@@ -8178,7 +8165,7 @@ namespace GeoDB.Model
             {
                 OnDIAMETR_DRILLChanging(value);
                 ReportPropertyChanging("DIAMETR_DRILL");
-                _DIAMETR_DRILL = StructuralObject.SetValidValue(value, false);
+                _DIAMETR_DRILL = StructuralObject.SetValidValue(value, false, "DIAMETR_DRILL");
                 ReportPropertyChanged("DIAMETR_DRILL");
                 OnDIAMETR_DRILLChanged();
             }
@@ -8202,7 +8189,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -8226,7 +8213,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -8250,7 +8237,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -8261,7 +8248,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -8335,7 +8321,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -8354,7 +8340,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -8379,7 +8365,7 @@ namespace GeoDB.Model
             {
                 OnSortChanging(value);
                 ReportPropertyChanging("Sort");
-                _Sort = StructuralObject.SetValidValue(value);
+                _Sort = StructuralObject.SetValidValue(value, "Sort");
                 ReportPropertyChanged("Sort");
                 OnSortChanged();
             }
@@ -8403,7 +8389,7 @@ namespace GeoDB.Model
             {
                 OnYearChanging(value);
                 ReportPropertyChanging("Year");
-                _Year = StructuralObject.SetValidValue(value);
+                _Year = StructuralObject.SetValidValue(value, "Year");
                 ReportPropertyChanged("Year");
                 OnYearChanged();
             }
@@ -8427,7 +8413,7 @@ namespace GeoDB.Model
             {
                 OnDatChanging(value);
                 ReportPropertyChanging("Dat");
-                _Dat = StructuralObject.SetValidValue(value);
+                _Dat = StructuralObject.SetValidValue(value, "Dat");
                 ReportPropertyChanged("Dat");
                 OnDatChanged();
             }
@@ -8451,7 +8437,7 @@ namespace GeoDB.Model
             {
                 OnQ_dChanging(value);
                 ReportPropertyChanging("Q_d");
-                _Q_d = StructuralObject.SetValidValue(value);
+                _Q_d = StructuralObject.SetValidValue(value, "Q_d");
                 ReportPropertyChanged("Q_d");
                 OnQ_dChanged();
             }
@@ -8475,7 +8461,7 @@ namespace GeoDB.Model
             {
                 OnCcp_dChanging(value);
                 ReportPropertyChanging("Ccp_d");
-                _Ccp_d = StructuralObject.SetValidValue(value);
+                _Ccp_d = StructuralObject.SetValidValue(value, "Ccp_d");
                 ReportPropertyChanged("Ccp_d");
                 OnCcp_dChanged();
             }
@@ -8499,7 +8485,7 @@ namespace GeoDB.Model
             {
                 OnM_dChanging(value);
                 ReportPropertyChanging("M_d");
-                _M_d = StructuralObject.SetValidValue(value);
+                _M_d = StructuralObject.SetValidValue(value, "M_d");
                 ReportPropertyChanged("M_d");
                 OnM_dChanged();
             }
@@ -8523,7 +8509,7 @@ namespace GeoDB.Model
             {
                 OnQ_pChanging(value);
                 ReportPropertyChanging("Q_p");
-                _Q_p = StructuralObject.SetValidValue(value);
+                _Q_p = StructuralObject.SetValidValue(value, "Q_p");
                 ReportPropertyChanged("Q_p");
                 OnQ_pChanged();
             }
@@ -8547,7 +8533,7 @@ namespace GeoDB.Model
             {
                 OnCcp_pChanging(value);
                 ReportPropertyChanging("Ccp_p");
-                _Ccp_p = StructuralObject.SetValidValue(value);
+                _Ccp_p = StructuralObject.SetValidValue(value, "Ccp_p");
                 ReportPropertyChanged("Ccp_p");
                 OnCcp_pChanged();
             }
@@ -8571,7 +8557,7 @@ namespace GeoDB.Model
             {
                 OnM_pChanging(value);
                 ReportPropertyChanging("M_p");
-                _M_p = StructuralObject.SetValidValue(value);
+                _M_p = StructuralObject.SetValidValue(value, "M_p");
                 ReportPropertyChanged("M_p");
                 OnM_pChanged();
             }
@@ -8595,7 +8581,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -8606,7 +8592,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -8722,7 +8707,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -8741,7 +8726,7 @@ namespace GeoDB.Model
                 {
                     OnidChanging(value);
                     ReportPropertyChanging("id");
-                    _id = StructuralObject.SetValidValue(value);
+                    _id = StructuralObject.SetValidValue(value, "id");
                     ReportPropertyChanged("id");
                     OnidChanged();
                 }
@@ -8766,7 +8751,7 @@ namespace GeoDB.Model
             {
                 OnKreChanging(value);
                 ReportPropertyChanging("Kre");
-                _Kre = StructuralObject.SetValidValue(value);
+                _Kre = StructuralObject.SetValidValue(value, "Kre");
                 ReportPropertyChanged("Kre");
                 OnKreChanged();
             }
@@ -8790,7 +8775,7 @@ namespace GeoDB.Model
             {
                 OnDebChanging(value);
                 ReportPropertyChanging("Deb");
-                _Deb = StructuralObject.SetValidValue(value);
+                _Deb = StructuralObject.SetValidValue(value, "Deb");
                 ReportPropertyChanged("Deb");
                 OnDebChanged();
             }
@@ -8814,7 +8799,7 @@ namespace GeoDB.Model
             {
                 OnVolChanging(value);
                 ReportPropertyChanging("Vol");
-                _Vol = StructuralObject.SetValidValue(value);
+                _Vol = StructuralObject.SetValidValue(value, "Vol");
                 ReportPropertyChanged("Vol");
                 OnVolChanged();
             }
@@ -8838,7 +8823,7 @@ namespace GeoDB.Model
             {
                 OnfDateChanging(value);
                 ReportPropertyChanging("fDate");
-                _fDate = StructuralObject.SetValidValue(value);
+                _fDate = StructuralObject.SetValidValue(value, "fDate");
                 ReportPropertyChanged("fDate");
                 OnfDateChanged();
             }
@@ -8862,7 +8847,7 @@ namespace GeoDB.Model
             {
                 OnSmenaIdChanging(value);
                 ReportPropertyChanging("SmenaId");
-                _SmenaId = StructuralObject.SetValidValue(value);
+                _SmenaId = StructuralObject.SetValidValue(value, "SmenaId");
                 ReportPropertyChanged("SmenaId");
                 OnSmenaIdChanged();
             }
@@ -8886,7 +8871,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -8910,7 +8895,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -8921,7 +8906,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -9069,7 +9053,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -9088,7 +9072,7 @@ namespace GeoDB.Model
                 {
                     OnGEOLOGIST_IDChanging(value);
                     ReportPropertyChanging("GEOLOGIST_ID");
-                    _GEOLOGIST_ID = StructuralObject.SetValidValue(value);
+                    _GEOLOGIST_ID = StructuralObject.SetValidValue(value, "GEOLOGIST_ID");
                     ReportPropertyChanged("GEOLOGIST_ID");
                     OnGEOLOGIST_IDChanged();
                 }
@@ -9113,7 +9097,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGIST_NAMEChanging(value);
                 ReportPropertyChanging("GEOLOGIST_NAME");
-                _GEOLOGIST_NAME = StructuralObject.SetValidValue(value, false);
+                _GEOLOGIST_NAME = StructuralObject.SetValidValue(value, false, "GEOLOGIST_NAME");
                 ReportPropertyChanged("GEOLOGIST_NAME");
                 OnGEOLOGIST_NAMEChanged();
             }
@@ -9137,7 +9121,7 @@ namespace GeoDB.Model
             {
                 OnLOGINChanging(value);
                 ReportPropertyChanging("LOGIN");
-                _LOGIN = StructuralObject.SetValidValue(value, false);
+                _LOGIN = StructuralObject.SetValidValue(value, false, "LOGIN");
                 ReportPropertyChanged("LOGIN");
                 OnLOGINChanged();
             }
@@ -9161,7 +9145,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -9185,7 +9169,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -9209,7 +9193,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -9220,7 +9204,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -9384,7 +9367,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -9403,7 +9386,7 @@ namespace GeoDB.Model
                 {
                     OnBENCH_IDChanging(value);
                     ReportPropertyChanging("BENCH_ID");
-                    _BENCH_ID = StructuralObject.SetValidValue(value);
+                    _BENCH_ID = StructuralObject.SetValidValue(value, "BENCH_ID");
                     ReportPropertyChanged("BENCH_ID");
                     OnBENCH_IDChanged();
                 }
@@ -9428,7 +9411,7 @@ namespace GeoDB.Model
             {
                 OnBENCH_NAMEChanging(value);
                 ReportPropertyChanging("BENCH_NAME");
-                _BENCH_NAME = StructuralObject.SetValidValue(value);
+                _BENCH_NAME = StructuralObject.SetValidValue(value, "BENCH_NAME");
                 ReportPropertyChanged("BENCH_NAME");
                 OnBENCH_NAMEChanged();
             }
@@ -9452,7 +9435,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -9476,7 +9459,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -9500,7 +9483,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -9511,7 +9494,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -9675,7 +9657,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -9694,7 +9676,7 @@ namespace GeoDB.Model
                 {
                     OnHOLE_IDChanging(value);
                     ReportPropertyChanging("HOLE_ID");
-                    _HOLE_ID = StructuralObject.SetValidValue(value);
+                    _HOLE_ID = StructuralObject.SetValidValue(value, "HOLE_ID");
                     ReportPropertyChanged("HOLE_ID");
                     OnHOLE_IDChanged();
                 }
@@ -9719,7 +9701,7 @@ namespace GeoDB.Model
             {
                 OnHOLE_NAMEChanging(value);
                 ReportPropertyChanging("HOLE_NAME");
-                _HOLE_NAME = StructuralObject.SetValidValue(value, false);
+                _HOLE_NAME = StructuralObject.SetValidValue(value, false, "HOLE_NAME");
                 ReportPropertyChanged("HOLE_NAME");
                 OnHOLE_NAMEChanged();
             }
@@ -9743,7 +9725,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -9767,7 +9749,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -9791,7 +9773,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -9802,7 +9784,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -9856,7 +9837,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -9875,7 +9856,7 @@ namespace GeoDB.Model
                 {
                     OnJOURNAL_IDChanging(value);
                     ReportPropertyChanging("JOURNAL_ID");
-                    _JOURNAL_ID = StructuralObject.SetValidValue(value);
+                    _JOURNAL_ID = StructuralObject.SetValidValue(value, "JOURNAL_ID");
                     ReportPropertyChanged("JOURNAL_ID");
                     OnJOURNAL_IDChanged();
                 }
@@ -9900,7 +9881,7 @@ namespace GeoDB.Model
             {
                 OnJOURNAL_NAMEChanging(value);
                 ReportPropertyChanging("JOURNAL_NAME");
-                _JOURNAL_NAME = StructuralObject.SetValidValue(value, false);
+                _JOURNAL_NAME = StructuralObject.SetValidValue(value, false, "JOURNAL_NAME");
                 ReportPropertyChanged("JOURNAL_NAME");
                 OnJOURNAL_NAMEChanged();
             }
@@ -9924,7 +9905,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -9948,7 +9929,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -9972,7 +9953,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -9983,7 +9964,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -10061,7 +10041,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -10080,7 +10060,7 @@ namespace GeoDB.Model
                 {
                     OnLITO_IDChanging(value);
                     ReportPropertyChanging("LITO_ID");
-                    _LITO_ID = StructuralObject.SetValidValue(value);
+                    _LITO_ID = StructuralObject.SetValidValue(value, "LITO_ID");
                     ReportPropertyChanged("LITO_ID");
                     OnLITO_IDChanged();
                 }
@@ -10105,7 +10085,7 @@ namespace GeoDB.Model
             {
                 OnLITO_CODChanging(value);
                 ReportPropertyChanging("LITO_COD");
-                _LITO_COD = StructuralObject.SetValidValue(value, false);
+                _LITO_COD = StructuralObject.SetValidValue(value, false, "LITO_COD");
                 ReportPropertyChanged("LITO_COD");
                 OnLITO_CODChanged();
             }
@@ -10129,7 +10109,7 @@ namespace GeoDB.Model
             {
                 OnROCKChanging(value);
                 ReportPropertyChanging("ROCK");
-                _ROCK = StructuralObject.SetValidValue(value, false);
+                _ROCK = StructuralObject.SetValidValue(value, false, "ROCK");
                 ReportPropertyChanged("ROCK");
                 OnROCKChanged();
             }
@@ -10153,7 +10133,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -10177,7 +10157,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -10201,7 +10181,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -10212,7 +10192,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -10288,7 +10267,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -10307,7 +10286,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -10332,7 +10311,7 @@ namespace GeoDB.Model
             {
                 OnMOVER1Changing(value);
                 ReportPropertyChanging("MOVER1");
-                _MOVER1 = StructuralObject.SetValidValue(value, false);
+                _MOVER1 = StructuralObject.SetValidValue(value, false, "MOVER1");
                 ReportPropertyChanged("MOVER1");
                 OnMOVER1Changed();
             }
@@ -10356,7 +10335,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -10380,7 +10359,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -10404,7 +10383,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -10415,7 +10394,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -10511,7 +10489,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -10530,7 +10508,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -10555,7 +10533,7 @@ namespace GeoDB.Model
             {
                 OnMesChanging(value);
                 ReportPropertyChanging("Mes");
-                _Mes = StructuralObject.SetValidValue(value, true);
+                _Mes = StructuralObject.SetValidValue(value, true, "Mes");
                 ReportPropertyChanged("Mes");
                 OnMesChanged();
             }
@@ -10579,7 +10557,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -10590,7 +10568,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -10644,7 +10621,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -10663,7 +10640,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -10688,7 +10665,7 @@ namespace GeoDB.Model
             {
                 OnPitChanging(value);
                 ReportPropertyChanging("Pit");
-                _Pit = StructuralObject.SetValidValue(value, false);
+                _Pit = StructuralObject.SetValidValue(value, false, "Pit");
                 ReportPropertyChanged("Pit");
                 OnPitChanged();
             }
@@ -10712,7 +10689,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -10736,7 +10713,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -10760,7 +10737,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -10771,7 +10748,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -10823,7 +10799,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -10842,7 +10818,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -10867,7 +10843,7 @@ namespace GeoDB.Model
             {
                 OnSmChanging(value);
                 ReportPropertyChanging("Sm");
-                _Sm = StructuralObject.SetValidValue(value, true);
+                _Sm = StructuralObject.SetValidValue(value, true, "Sm");
                 ReportPropertyChanged("Sm");
                 OnSmChanged();
             }
@@ -10891,7 +10867,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -10915,7 +10891,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -10939,7 +10915,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -10950,7 +10926,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -11068,7 +11043,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -11087,7 +11062,7 @@ namespace GeoDB.Model
                 {
                     OnКодChanging(value);
                     ReportPropertyChanging("Код");
-                    _Код = StructuralObject.SetValidValue(value);
+                    _Код = StructuralObject.SetValidValue(value, "Код");
                     ReportPropertyChanged("Код");
                     OnКодChanged();
                 }
@@ -11112,7 +11087,7 @@ namespace GeoDB.Model
             {
                 OnGodChanging(value);
                 ReportPropertyChanging("God");
-                _God = StructuralObject.SetValidValue(value);
+                _God = StructuralObject.SetValidValue(value, "God");
                 ReportPropertyChanged("God");
                 OnGodChanged();
             }
@@ -11136,7 +11111,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -11147,7 +11122,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -11201,7 +11175,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -11220,7 +11194,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -11245,7 +11219,7 @@ namespace GeoDB.Model
             {
                 OnR_zoneChanging(value);
                 ReportPropertyChanging("R_zone");
-                _R_zone = StructuralObject.SetValidValue(value, false);
+                _R_zone = StructuralObject.SetValidValue(value, false, "R_zone");
                 ReportPropertyChanged("R_zone");
                 OnR_zoneChanged();
             }
@@ -11269,7 +11243,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -11293,7 +11267,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -11317,7 +11291,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -11328,7 +11302,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -11380,7 +11353,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -11399,7 +11372,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -11424,7 +11397,7 @@ namespace GeoDB.Model
             {
                 OnBENCHChanging(value);
                 ReportPropertyChanging("BENCH");
-                _BENCH = StructuralObject.SetValidValue(value);
+                _BENCH = StructuralObject.SetValidValue(value, "BENCH");
                 ReportPropertyChanged("BENCH");
                 OnBENCHChanged();
             }
@@ -11448,7 +11421,7 @@ namespace GeoDB.Model
             {
                 OnCATEGORYChanging(value);
                 ReportPropertyChanging("CATEGORY");
-                _CATEGORY = StructuralObject.SetValidValue(value);
+                _CATEGORY = StructuralObject.SetValidValue(value, "CATEGORY");
                 ReportPropertyChanged("CATEGORY");
                 OnCATEGORYChanged();
             }
@@ -11472,7 +11445,7 @@ namespace GeoDB.Model
             {
                 OndChanging(value);
                 ReportPropertyChanging("d");
-                _d = StructuralObject.SetValidValue(value);
+                _d = StructuralObject.SetValidValue(value, "d");
                 ReportPropertyChanged("d");
                 OndChanged();
             }
@@ -11496,7 +11469,7 @@ namespace GeoDB.Model
             {
                 OnVChanging(value);
                 ReportPropertyChanging("V");
-                _V = StructuralObject.SetValidValue(value);
+                _V = StructuralObject.SetValidValue(value, "V");
                 ReportPropertyChanged("V");
                 OnVChanged();
             }
@@ -11520,7 +11493,7 @@ namespace GeoDB.Model
             {
                 OnQChanging(value);
                 ReportPropertyChanging("Q");
-                _Q = StructuralObject.SetValidValue(value);
+                _Q = StructuralObject.SetValidValue(value, "Q");
                 ReportPropertyChanged("Q");
                 OnQChanged();
             }
@@ -11544,7 +11517,7 @@ namespace GeoDB.Model
             {
                 OnCcpChanging(value);
                 ReportPropertyChanging("Ccp");
-                _Ccp = StructuralObject.SetValidValue(value);
+                _Ccp = StructuralObject.SetValidValue(value, "Ccp");
                 ReportPropertyChanged("Ccp");
                 OnCcpChanged();
             }
@@ -11568,7 +11541,7 @@ namespace GeoDB.Model
             {
                 OnMChanging(value);
                 ReportPropertyChanging("M");
-                _M = StructuralObject.SetValidValue(value);
+                _M = StructuralObject.SetValidValue(value, "M");
                 ReportPropertyChanged("M");
                 OnMChanged();
             }
@@ -11592,7 +11565,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -11616,7 +11589,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -11640,7 +11613,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -11651,7 +11624,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -11723,7 +11695,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -11742,7 +11714,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -11767,7 +11739,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -11791,7 +11763,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -11815,7 +11787,7 @@ namespace GeoDB.Model
             {
                 OnAUChanging(value);
                 ReportPropertyChanging("AU");
-                _AU = StructuralObject.SetValidValue(value);
+                _AU = StructuralObject.SetValidValue(value, "AU");
                 ReportPropertyChanged("AU");
                 OnAUChanged();
             }
@@ -11839,7 +11811,7 @@ namespace GeoDB.Model
             {
                 OnAU_CUTChanging(value);
                 ReportPropertyChanging("AU_CUT");
-                _AU_CUT = StructuralObject.SetValidValue(value);
+                _AU_CUT = StructuralObject.SetValidValue(value, "AU_CUT");
                 ReportPropertyChanged("AU_CUT");
                 OnAU_CUTChanged();
             }
@@ -11863,7 +11835,7 @@ namespace GeoDB.Model
             {
                 OnAsChanging(value);
                 ReportPropertyChanging("As");
-                _As = StructuralObject.SetValidValue(value);
+                _As = StructuralObject.SetValidValue(value, "As");
                 ReportPropertyChanged("As");
                 OnAsChanged();
             }
@@ -11887,7 +11859,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value);
+                _Sb = StructuralObject.SetValidValue(value, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -11911,7 +11883,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value);
+                _S = StructuralObject.SetValidValue(value, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -11935,7 +11907,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value);
+                _Ca = StructuralObject.SetValidValue(value, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -11959,7 +11931,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value);
+                _Fe = StructuralObject.SetValidValue(value, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -11983,7 +11955,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value);
+                _Ag = StructuralObject.SetValidValue(value, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -12007,7 +11979,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value);
+                _C = StructuralObject.SetValidValue(value, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -12031,7 +12003,7 @@ namespace GeoDB.Model
             {
                 OnBLANKChanging(value);
                 ReportPropertyChanging("BLANK");
-                _BLANK = StructuralObject.SetValidValue(value);
+                _BLANK = StructuralObject.SetValidValue(value, "BLANK");
                 ReportPropertyChanged("BLANK");
                 OnBLANKChanged();
             }
@@ -12055,7 +12027,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -12079,7 +12051,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -12103,7 +12075,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -12114,7 +12086,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -12196,7 +12167,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -12215,7 +12186,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -12242,7 +12213,7 @@ namespace GeoDB.Model
                 {
                     OnSAMPLEChanging(value);
                     ReportPropertyChanging("SAMPLE");
-                    _SAMPLE = StructuralObject.SetValidValue(value, false);
+                    _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                     ReportPropertyChanged("SAMPLE");
                     OnSAMPLEChanged();
                 }
@@ -12269,7 +12240,7 @@ namespace GeoDB.Model
                 {
                     OnMOVERChanging(value);
                     ReportPropertyChanging("MOVER");
-                    _MOVER = StructuralObject.SetValidValue(value);
+                    _MOVER = StructuralObject.SetValidValue(value, "MOVER");
                     ReportPropertyChanged("MOVER");
                     OnMOVERChanged();
                 }
@@ -12296,7 +12267,7 @@ namespace GeoDB.Model
                 {
                     OnBENCH_IDChanging(value);
                     ReportPropertyChanging("BENCH_ID");
-                    _BENCH_ID = StructuralObject.SetValidValue(value);
+                    _BENCH_ID = StructuralObject.SetValidValue(value, "BENCH_ID");
                     ReportPropertyChanged("BENCH_ID");
                     OnBENCH_IDChanged();
                 }
@@ -12323,7 +12294,7 @@ namespace GeoDB.Model
                 {
                     OnFROMChanging(value);
                     ReportPropertyChanging("FROM");
-                    _FROM = StructuralObject.SetValidValue(value);
+                    _FROM = StructuralObject.SetValidValue(value, "FROM");
                     ReportPropertyChanged("FROM");
                     OnFROMChanged();
                 }
@@ -12350,7 +12321,7 @@ namespace GeoDB.Model
                 {
                     OnTOChanging(value);
                     ReportPropertyChanging("TO");
-                    _TO = StructuralObject.SetValidValue(value);
+                    _TO = StructuralObject.SetValidValue(value, "TO");
                     ReportPropertyChanged("TO");
                     OnTOChanged();
                 }
@@ -12377,7 +12348,7 @@ namespace GeoDB.Model
                 {
                     OnLENGTHChanging(value);
                     ReportPropertyChanging("LENGTH");
-                    _LENGTH = StructuralObject.SetValidValue(value);
+                    _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                     ReportPropertyChanged("LENGTH");
                     OnLENGTHChanged();
                 }
@@ -12402,7 +12373,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -12426,7 +12397,7 @@ namespace GeoDB.Model
             {
                 OnAUChanging(value);
                 ReportPropertyChanging("AU");
-                _AU = StructuralObject.SetValidValue(value);
+                _AU = StructuralObject.SetValidValue(value, "AU");
                 ReportPropertyChanged("AU");
                 OnAUChanged();
             }
@@ -12450,7 +12421,7 @@ namespace GeoDB.Model
             {
                 OnASChanging(value);
                 ReportPropertyChanging("AS");
-                _AS = StructuralObject.SetValidValue(value);
+                _AS = StructuralObject.SetValidValue(value, "AS");
                 ReportPropertyChanged("AS");
                 OnASChanged();
             }
@@ -12474,7 +12445,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value);
+                _Sb = StructuralObject.SetValidValue(value, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -12498,7 +12469,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value);
+                _S = StructuralObject.SetValidValue(value, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -12522,7 +12493,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value);
+                _Ca = StructuralObject.SetValidValue(value, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -12546,7 +12517,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value);
+                _Fe = StructuralObject.SetValidValue(value, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -12570,7 +12541,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value);
+                _Ag = StructuralObject.SetValidValue(value, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -12594,7 +12565,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value);
+                _C = StructuralObject.SetValidValue(value, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -12620,7 +12591,7 @@ namespace GeoDB.Model
                 {
                     OnBLANKChanging(value);
                     ReportPropertyChanging("BLANK");
-                    _BLANK = StructuralObject.SetValidValue(value);
+                    _BLANK = StructuralObject.SetValidValue(value, "BLANK");
                     ReportPropertyChanged("BLANK");
                     OnBLANKChanged();
                 }
@@ -12645,7 +12616,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -12669,7 +12640,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -12693,7 +12664,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -12717,7 +12688,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -12741,7 +12712,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -12752,7 +12723,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -12934,7 +12904,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -12953,7 +12923,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -12978,7 +12948,7 @@ namespace GeoDB.Model
             {
                 OnRANG1Changing(value);
                 ReportPropertyChanging("RANG1");
-                _RANG1 = StructuralObject.SetValidValue(value);
+                _RANG1 = StructuralObject.SetValidValue(value, "RANG1");
                 ReportPropertyChanged("RANG1");
                 OnRANG1Changed();
             }
@@ -13002,7 +12972,7 @@ namespace GeoDB.Model
             {
                 OnTYPE_RANGChanging(value);
                 ReportPropertyChanging("TYPE_RANG");
-                _TYPE_RANG = StructuralObject.SetValidValue(value, true);
+                _TYPE_RANG = StructuralObject.SetValidValue(value, true, "TYPE_RANG");
                 ReportPropertyChanged("TYPE_RANG");
                 OnTYPE_RANGChanged();
             }
@@ -13026,7 +12996,7 @@ namespace GeoDB.Model
             {
                 OnENG_RANGChanging(value);
                 ReportPropertyChanging("ENG_RANG");
-                _ENG_RANG = StructuralObject.SetValidValue(value, true);
+                _ENG_RANG = StructuralObject.SetValidValue(value, true, "ENG_RANG");
                 ReportPropertyChanged("ENG_RANG");
                 OnENG_RANGChanged();
             }
@@ -13050,7 +13020,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -13074,7 +13044,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -13098,7 +13068,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -13109,7 +13079,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -13185,7 +13154,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -13204,7 +13173,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -13229,7 +13198,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value, false);
+                _BLANK_ID = StructuralObject.SetValidValue(value, false, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -13253,7 +13222,7 @@ namespace GeoDB.Model
             {
                 OnDATE_FORWChanging(value);
                 ReportPropertyChanging("DATE_FORW");
-                _DATE_FORW = StructuralObject.SetValidValue(value);
+                _DATE_FORW = StructuralObject.SetValidValue(value, "DATE_FORW");
                 ReportPropertyChanged("DATE_FORW");
                 OnDATE_FORWChanged();
             }
@@ -13277,7 +13246,7 @@ namespace GeoDB.Model
             {
                 OnPLACEChanging(value);
                 ReportPropertyChanging("PLACE");
-                _PLACE = StructuralObject.SetValidValue(value, true);
+                _PLACE = StructuralObject.SetValidValue(value, true, "PLACE");
                 ReportPropertyChanged("PLACE");
                 OnPLACEChanged();
             }
@@ -13301,7 +13270,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -13325,7 +13294,7 @@ namespace GeoDB.Model
             {
                 OnPROT_NUMChanging(value);
                 ReportPropertyChanging("PROT_NUM");
-                _PROT_NUM = StructuralObject.SetValidValue(value, true);
+                _PROT_NUM = StructuralObject.SetValidValue(value, true, "PROT_NUM");
                 ReportPropertyChanged("PROT_NUM");
                 OnPROT_NUMChanged();
             }
@@ -13349,7 +13318,7 @@ namespace GeoDB.Model
             {
                 OnPROT_DATChanging(value);
                 ReportPropertyChanging("PROT_DAT");
-                _PROT_DAT = StructuralObject.SetValidValue(value);
+                _PROT_DAT = StructuralObject.SetValidValue(value, "PROT_DAT");
                 ReportPropertyChanged("PROT_DAT");
                 OnPROT_DATChanged();
             }
@@ -13373,7 +13342,7 @@ namespace GeoDB.Model
             {
                 OnPOSTUP_DATChanging(value);
                 ReportPropertyChanging("POSTUP_DAT");
-                _POSTUP_DAT = StructuralObject.SetValidValue(value);
+                _POSTUP_DAT = StructuralObject.SetValidValue(value, "POSTUP_DAT");
                 ReportPropertyChanged("POSTUP_DAT");
                 OnPOSTUP_DATChanged();
             }
@@ -13397,7 +13366,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -13421,7 +13390,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -13445,7 +13414,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -13456,7 +13425,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -13642,7 +13610,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -13661,7 +13629,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -13686,7 +13654,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value, false);
+                _BLANK_ID = StructuralObject.SetValidValue(value, false, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -13710,7 +13678,7 @@ namespace GeoDB.Model
             {
                 OnDATE_FORWChanging(value);
                 ReportPropertyChanging("DATE_FORW");
-                _DATE_FORW = StructuralObject.SetValidValue(value);
+                _DATE_FORW = StructuralObject.SetValidValue(value, "DATE_FORW");
                 ReportPropertyChanged("DATE_FORW");
                 OnDATE_FORWChanged();
             }
@@ -13734,7 +13702,7 @@ namespace GeoDB.Model
             {
                 OnPLACEChanging(value);
                 ReportPropertyChanging("PLACE");
-                _PLACE = StructuralObject.SetValidValue(value, true);
+                _PLACE = StructuralObject.SetValidValue(value, true, "PLACE");
                 ReportPropertyChanged("PLACE");
                 OnPLACEChanged();
             }
@@ -13758,7 +13726,7 @@ namespace GeoDB.Model
             {
                 OnMOVERChanging(value);
                 ReportPropertyChanging("MOVER");
-                _MOVER = StructuralObject.SetValidValue(value);
+                _MOVER = StructuralObject.SetValidValue(value, "MOVER");
                 ReportPropertyChanged("MOVER");
                 OnMOVERChanged();
             }
@@ -13782,7 +13750,7 @@ namespace GeoDB.Model
             {
                 OnSECTORChanging(value);
                 ReportPropertyChanging("SECTOR");
-                _SECTOR = StructuralObject.SetValidValue(value);
+                _SECTOR = StructuralObject.SetValidValue(value, "SECTOR");
                 ReportPropertyChanged("SECTOR");
                 OnSECTORChanged();
             }
@@ -13806,7 +13774,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -13830,7 +13798,7 @@ namespace GeoDB.Model
             {
                 OnPROT_NUMChanging(value);
                 ReportPropertyChanging("PROT_NUM");
-                _PROT_NUM = StructuralObject.SetValidValue(value, true);
+                _PROT_NUM = StructuralObject.SetValidValue(value, true, "PROT_NUM");
                 ReportPropertyChanged("PROT_NUM");
                 OnPROT_NUMChanged();
             }
@@ -13854,7 +13822,7 @@ namespace GeoDB.Model
             {
                 OnPROT_DATChanging(value);
                 ReportPropertyChanging("PROT_DAT");
-                _PROT_DAT = StructuralObject.SetValidValue(value);
+                _PROT_DAT = StructuralObject.SetValidValue(value, "PROT_DAT");
                 ReportPropertyChanged("PROT_DAT");
                 OnPROT_DATChanged();
             }
@@ -13878,7 +13846,7 @@ namespace GeoDB.Model
             {
                 OnPOSTUP_DATChanging(value);
                 ReportPropertyChanging("POSTUP_DAT");
-                _POSTUP_DAT = StructuralObject.SetValidValue(value);
+                _POSTUP_DAT = StructuralObject.SetValidValue(value, "POSTUP_DAT");
                 ReportPropertyChanged("POSTUP_DAT");
                 OnPOSTUP_DATChanged();
             }
@@ -13902,7 +13870,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -13926,7 +13894,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -13950,7 +13918,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -13961,7 +13929,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -14171,7 +14138,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -14190,7 +14157,7 @@ namespace GeoDB.Model
                 {
                     OnEX_LINE_CODChanging(value);
                     ReportPropertyChanging("EX_LINE_COD");
-                    _EX_LINE_COD = StructuralObject.SetValidValue(value);
+                    _EX_LINE_COD = StructuralObject.SetValidValue(value, "EX_LINE_COD");
                     ReportPropertyChanged("EX_LINE_COD");
                     OnEX_LINE_CODChanged();
                 }
@@ -14215,7 +14182,7 @@ namespace GeoDB.Model
             {
                 OnEXPL_LINE_NAMEChanging(value);
                 ReportPropertyChanging("EXPL_LINE_NAME");
-                _EXPL_LINE_NAME = StructuralObject.SetValidValue(value, true);
+                _EXPL_LINE_NAME = StructuralObject.SetValidValue(value, true, "EXPL_LINE_NAME");
                 ReportPropertyChanged("EXPL_LINE_NAME");
                 OnEXPL_LINE_NAMEChanged();
             }
@@ -14239,7 +14206,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -14263,7 +14230,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -14287,7 +14254,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -14298,7 +14265,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -14350,7 +14316,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -14369,7 +14335,7 @@ namespace GeoDB.Model
                 {
                     OnEX_LINE_CODChanging(value);
                     ReportPropertyChanging("EX_LINE_COD");
-                    _EX_LINE_COD = StructuralObject.SetValidValue(value);
+                    _EX_LINE_COD = StructuralObject.SetValidValue(value, "EX_LINE_COD");
                     ReportPropertyChanged("EX_LINE_COD");
                     OnEX_LINE_CODChanged();
                 }
@@ -14394,7 +14360,7 @@ namespace GeoDB.Model
             {
                 OnEXPL_LINE_NAMEChanging(value);
                 ReportPropertyChanging("EXPL_LINE_NAME");
-                _EXPL_LINE_NAME = StructuralObject.SetValidValue(value, true);
+                _EXPL_LINE_NAME = StructuralObject.SetValidValue(value, true, "EXPL_LINE_NAME");
                 ReportPropertyChanged("EXPL_LINE_NAME");
                 OnEXPL_LINE_NAMEChanged();
             }
@@ -14418,7 +14384,7 @@ namespace GeoDB.Model
             {
                 OnEXPL_LINE_DATEChanging(value);
                 ReportPropertyChanging("EXPL_LINE_DATE");
-                _EXPL_LINE_DATE = StructuralObject.SetValidValue(value);
+                _EXPL_LINE_DATE = StructuralObject.SetValidValue(value, "EXPL_LINE_DATE");
                 ReportPropertyChanged("EXPL_LINE_DATE");
                 OnEXPL_LINE_DATEChanged();
             }
@@ -14442,7 +14408,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -14466,7 +14432,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -14490,7 +14456,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -14501,7 +14467,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -14601,7 +14566,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -14620,7 +14585,7 @@ namespace GeoDB.Model
                 {
                     OnID_RV_GEOChanging(value);
                     ReportPropertyChanging("ID_RV_GEO");
-                    _ID_RV_GEO = StructuralObject.SetValidValue(value);
+                    _ID_RV_GEO = StructuralObject.SetValidValue(value, "ID_RV_GEO");
                     ReportPropertyChanged("ID_RV_GEO");
                     OnID_RV_GEOChanged();
                 }
@@ -14645,7 +14610,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value);
+                _BLANK_ID = StructuralObject.SetValidValue(value, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -14669,7 +14634,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -14693,7 +14658,7 @@ namespace GeoDB.Model
             {
                 OnSFROMChanging(value);
                 ReportPropertyChanging("SFROM");
-                _SFROM = StructuralObject.SetValidValue(value);
+                _SFROM = StructuralObject.SetValidValue(value, "SFROM");
                 ReportPropertyChanged("SFROM");
                 OnSFROMChanged();
             }
@@ -14717,7 +14682,7 @@ namespace GeoDB.Model
             {
                 OnSTOChanging(value);
                 ReportPropertyChanging("STO");
-                _STO = StructuralObject.SetValidValue(value);
+                _STO = StructuralObject.SetValidValue(value, "STO");
                 ReportPropertyChanged("STO");
                 OnSTOChanged();
             }
@@ -14741,7 +14706,7 @@ namespace GeoDB.Model
             {
                 OnBLASTChanging(value);
                 ReportPropertyChanging("BLAST");
-                _BLAST = StructuralObject.SetValidValue(value, true);
+                _BLAST = StructuralObject.SetValidValue(value, true, "BLAST");
                 ReportPropertyChanged("BLAST");
                 OnBLASTChanged();
             }
@@ -14765,7 +14730,7 @@ namespace GeoDB.Model
             {
                 OnHOLEChanging(value);
                 ReportPropertyChanging("HOLE");
-                _HOLE = StructuralObject.SetValidValue(value, true);
+                _HOLE = StructuralObject.SetValidValue(value, true, "HOLE");
                 ReportPropertyChanged("HOLE");
                 OnHOLEChanged();
             }
@@ -14789,7 +14754,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -14813,7 +14778,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -14837,7 +14802,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -14848,7 +14813,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -14964,7 +14928,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -14983,7 +14947,7 @@ namespace GeoDB.Model
                 {
                     OnID_RV_GEOChanging(value);
                     ReportPropertyChanging("ID_RV_GEO");
-                    _ID_RV_GEO = StructuralObject.SetValidValue(value);
+                    _ID_RV_GEO = StructuralObject.SetValidValue(value, "ID_RV_GEO");
                     ReportPropertyChanged("ID_RV_GEO");
                     OnID_RV_GEOChanged();
                 }
@@ -15008,7 +14972,7 @@ namespace GeoDB.Model
             {
                 OnBLANK_IDChanging(value);
                 ReportPropertyChanging("BLANK_ID");
-                _BLANK_ID = StructuralObject.SetValidValue(value);
+                _BLANK_ID = StructuralObject.SetValidValue(value, "BLANK_ID");
                 ReportPropertyChanged("BLANK_ID");
                 OnBLANK_IDChanged();
             }
@@ -15032,7 +14996,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -15056,7 +15020,7 @@ namespace GeoDB.Model
             {
                 OnSFROMChanging(value);
                 ReportPropertyChanging("SFROM");
-                _SFROM = StructuralObject.SetValidValue(value);
+                _SFROM = StructuralObject.SetValidValue(value, "SFROM");
                 ReportPropertyChanged("SFROM");
                 OnSFROMChanged();
             }
@@ -15080,7 +15044,7 @@ namespace GeoDB.Model
             {
                 OnSTOChanging(value);
                 ReportPropertyChanging("STO");
-                _STO = StructuralObject.SetValidValue(value);
+                _STO = StructuralObject.SetValidValue(value, "STO");
                 ReportPropertyChanged("STO");
                 OnSTOChanged();
             }
@@ -15104,7 +15068,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -15128,7 +15092,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -15152,7 +15116,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -15163,7 +15127,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -15277,7 +15240,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -15296,7 +15259,7 @@ namespace GeoDB.Model
                 {
                     OnID_RV_GRPChanging(value);
                     ReportPropertyChanging("ID_RV_GRP");
-                    _ID_RV_GRP = StructuralObject.SetValidValue(value);
+                    _ID_RV_GRP = StructuralObject.SetValidValue(value, "ID_RV_GRP");
                     ReportPropertyChanged("ID_RV_GRP");
                     OnID_RV_GRPChanged();
                 }
@@ -15321,7 +15284,7 @@ namespace GeoDB.Model
             {
                 OnID_RV_GEOChanging(value);
                 ReportPropertyChanging("ID_RV_GEO");
-                _ID_RV_GEO = StructuralObject.SetValidValue(value);
+                _ID_RV_GEO = StructuralObject.SetValidValue(value, "ID_RV_GEO");
                 ReportPropertyChanged("ID_RV_GEO");
                 OnID_RV_GEOChanged();
             }
@@ -15345,7 +15308,7 @@ namespace GeoDB.Model
             {
                 OnVESChanging(value);
                 ReportPropertyChanging("VES");
-                _VES = StructuralObject.SetValidValue(value);
+                _VES = StructuralObject.SetValidValue(value, "VES");
                 ReportPropertyChanged("VES");
                 OnVESChanged();
             }
@@ -15369,7 +15332,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -15393,7 +15356,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -15417,7 +15380,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -15428,7 +15391,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -15498,7 +15460,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -15517,7 +15479,7 @@ namespace GeoDB.Model
                 {
                     OnID_RV_GRPChanging(value);
                     ReportPropertyChanging("ID_RV_GRP");
-                    _ID_RV_GRP = StructuralObject.SetValidValue(value);
+                    _ID_RV_GRP = StructuralObject.SetValidValue(value, "ID_RV_GRP");
                     ReportPropertyChanged("ID_RV_GRP");
                     OnID_RV_GRPChanged();
                 }
@@ -15542,7 +15504,7 @@ namespace GeoDB.Model
             {
                 OnID_RV_GEOChanging(value);
                 ReportPropertyChanging("ID_RV_GEO");
-                _ID_RV_GEO = StructuralObject.SetValidValue(value);
+                _ID_RV_GEO = StructuralObject.SetValidValue(value, "ID_RV_GEO");
                 ReportPropertyChanged("ID_RV_GEO");
                 OnID_RV_GEOChanged();
             }
@@ -15566,7 +15528,7 @@ namespace GeoDB.Model
             {
                 OnVESChanging(value);
                 ReportPropertyChanging("VES");
-                _VES = StructuralObject.SetValidValue(value);
+                _VES = StructuralObject.SetValidValue(value, "VES");
                 ReportPropertyChanged("VES");
                 OnVESChanged();
             }
@@ -15590,7 +15552,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -15614,7 +15576,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -15638,7 +15600,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -15649,7 +15611,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -15719,7 +15680,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -15738,7 +15699,7 @@ namespace GeoDB.Model
                 {
                     OnID_RV_PALChanging(value);
                     ReportPropertyChanging("ID_RV_PAL");
-                    _ID_RV_PAL = StructuralObject.SetValidValue(value);
+                    _ID_RV_PAL = StructuralObject.SetValidValue(value, "ID_RV_PAL");
                     ReportPropertyChanged("ID_RV_PAL");
                     OnID_RV_PALChanged();
                 }
@@ -15765,7 +15726,7 @@ namespace GeoDB.Model
                 {
                     OnID_RV_GEOChanging(value);
                     ReportPropertyChanging("ID_RV_GEO");
-                    _ID_RV_GEO = StructuralObject.SetValidValue(value);
+                    _ID_RV_GEO = StructuralObject.SetValidValue(value, "ID_RV_GEO");
                     ReportPropertyChanged("ID_RV_GEO");
                     OnID_RV_GEOChanged();
                 }
@@ -15790,7 +15751,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value, true);
+                _Au = StructuralObject.SetValidValue(value, true, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -15814,7 +15775,7 @@ namespace GeoDB.Model
             {
                 OnmAu1Changing(value);
                 ReportPropertyChanging("mAu1");
-                _mAu1 = StructuralObject.SetValidValue(value, true);
+                _mAu1 = StructuralObject.SetValidValue(value, true, "mAu1");
                 ReportPropertyChanged("mAu1");
                 OnmAu1Changed();
             }
@@ -15838,7 +15799,7 @@ namespace GeoDB.Model
             {
                 OnmAu2Changing(value);
                 ReportPropertyChanging("mAu2");
-                _mAu2 = StructuralObject.SetValidValue(value, true);
+                _mAu2 = StructuralObject.SetValidValue(value, true, "mAu2");
                 ReportPropertyChanged("mAu2");
                 OnmAu2Changed();
             }
@@ -15862,7 +15823,7 @@ namespace GeoDB.Model
             {
                 OnmAu3Changing(value);
                 ReportPropertyChanging("mAu3");
-                _mAu3 = StructuralObject.SetValidValue(value, true);
+                _mAu3 = StructuralObject.SetValidValue(value, true, "mAu3");
                 ReportPropertyChanged("mAu3");
                 OnmAu3Changed();
             }
@@ -15886,7 +15847,7 @@ namespace GeoDB.Model
             {
                 OnmAu4Changing(value);
                 ReportPropertyChanging("mAu4");
-                _mAu4 = StructuralObject.SetValidValue(value, true);
+                _mAu4 = StructuralObject.SetValidValue(value, true, "mAu4");
                 ReportPropertyChanged("mAu4");
                 OnmAu4Changed();
             }
@@ -15910,7 +15871,7 @@ namespace GeoDB.Model
             {
                 OnAsChanging(value);
                 ReportPropertyChanging("As");
-                _As = StructuralObject.SetValidValue(value, true);
+                _As = StructuralObject.SetValidValue(value, true, "As");
                 ReportPropertyChanged("As");
                 OnAsChanged();
             }
@@ -15934,7 +15895,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value, true);
+                _Sb = StructuralObject.SetValidValue(value, true, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -15958,7 +15919,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value, true);
+                _S = StructuralObject.SetValidValue(value, true, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -15982,7 +15943,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value, true);
+                _Ca = StructuralObject.SetValidValue(value, true, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -16006,7 +15967,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value, true);
+                _Fe = StructuralObject.SetValidValue(value, true, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -16030,7 +15991,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value, true);
+                _Ag = StructuralObject.SetValidValue(value, true, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -16054,7 +16015,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value, true);
+                _C = StructuralObject.SetValidValue(value, true, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -16078,7 +16039,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -16102,7 +16063,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -16126,7 +16087,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -16137,7 +16098,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -16207,7 +16167,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -16226,7 +16186,7 @@ namespace GeoDB.Model
                 {
                     OnID_RV_PALChanging(value);
                     ReportPropertyChanging("ID_RV_PAL");
-                    _ID_RV_PAL = StructuralObject.SetValidValue(value);
+                    _ID_RV_PAL = StructuralObject.SetValidValue(value, "ID_RV_PAL");
                     ReportPropertyChanged("ID_RV_PAL");
                     OnID_RV_PALChanged();
                 }
@@ -16251,7 +16211,7 @@ namespace GeoDB.Model
             {
                 OnID_RV_GEOChanging(value);
                 ReportPropertyChanging("ID_RV_GEO");
-                _ID_RV_GEO = StructuralObject.SetValidValue(value);
+                _ID_RV_GEO = StructuralObject.SetValidValue(value, "ID_RV_GEO");
                 ReportPropertyChanged("ID_RV_GEO");
                 OnID_RV_GEOChanged();
             }
@@ -16275,7 +16235,7 @@ namespace GeoDB.Model
             {
                 OnAuChanging(value);
                 ReportPropertyChanging("Au");
-                _Au = StructuralObject.SetValidValue(value, true);
+                _Au = StructuralObject.SetValidValue(value, true, "Au");
                 ReportPropertyChanged("Au");
                 OnAuChanged();
             }
@@ -16299,7 +16259,7 @@ namespace GeoDB.Model
             {
                 OnAsChanging(value);
                 ReportPropertyChanging("As");
-                _As = StructuralObject.SetValidValue(value, true);
+                _As = StructuralObject.SetValidValue(value, true, "As");
                 ReportPropertyChanged("As");
                 OnAsChanged();
             }
@@ -16323,7 +16283,7 @@ namespace GeoDB.Model
             {
                 OnmAu1Changing(value);
                 ReportPropertyChanging("mAu1");
-                _mAu1 = StructuralObject.SetValidValue(value, true);
+                _mAu1 = StructuralObject.SetValidValue(value, true, "mAu1");
                 ReportPropertyChanged("mAu1");
                 OnmAu1Changed();
             }
@@ -16347,7 +16307,7 @@ namespace GeoDB.Model
             {
                 OnmAu2Changing(value);
                 ReportPropertyChanging("mAu2");
-                _mAu2 = StructuralObject.SetValidValue(value, true);
+                _mAu2 = StructuralObject.SetValidValue(value, true, "mAu2");
                 ReportPropertyChanged("mAu2");
                 OnmAu2Changed();
             }
@@ -16371,7 +16331,7 @@ namespace GeoDB.Model
             {
                 OnmAu3Changing(value);
                 ReportPropertyChanging("mAu3");
-                _mAu3 = StructuralObject.SetValidValue(value, true);
+                _mAu3 = StructuralObject.SetValidValue(value, true, "mAu3");
                 ReportPropertyChanged("mAu3");
                 OnmAu3Changed();
             }
@@ -16395,7 +16355,7 @@ namespace GeoDB.Model
             {
                 OnmAu4Changing(value);
                 ReportPropertyChanging("mAu4");
-                _mAu4 = StructuralObject.SetValidValue(value, true);
+                _mAu4 = StructuralObject.SetValidValue(value, true, "mAu4");
                 ReportPropertyChanged("mAu4");
                 OnmAu4Changed();
             }
@@ -16419,7 +16379,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value, true);
+                _Sb = StructuralObject.SetValidValue(value, true, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -16443,7 +16403,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value, true);
+                _S = StructuralObject.SetValidValue(value, true, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -16467,7 +16427,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value, true);
+                _Ca = StructuralObject.SetValidValue(value, true, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -16491,7 +16451,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value, true);
+                _Fe = StructuralObject.SetValidValue(value, true, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -16515,7 +16475,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value, true);
+                _Ag = StructuralObject.SetValidValue(value, true, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -16539,7 +16499,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value, true);
+                _C = StructuralObject.SetValidValue(value, true, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -16563,7 +16523,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -16587,7 +16547,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -16611,7 +16571,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -16622,7 +16582,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -16702,7 +16661,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -16721,7 +16680,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -16746,7 +16705,7 @@ namespace GeoDB.Model
             {
                 OnPitChanging(value);
                 ReportPropertyChanging("Pit");
-                _Pit = StructuralObject.SetValidValue(value);
+                _Pit = StructuralObject.SetValidValue(value, "Pit");
                 ReportPropertyChanged("Pit");
                 OnPitChanged();
             }
@@ -16770,7 +16729,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -16794,7 +16753,7 @@ namespace GeoDB.Model
             {
                 OnBenchChanging(value);
                 ReportPropertyChanging("Bench");
-                _Bench = StructuralObject.SetValidValue(value);
+                _Bench = StructuralObject.SetValidValue(value, "Bench");
                 ReportPropertyChanged("Bench");
                 OnBenchChanged();
             }
@@ -16818,7 +16777,7 @@ namespace GeoDB.Model
             {
                 OnBlokChanging(value);
                 ReportPropertyChanging("Blok");
-                _Blok = StructuralObject.SetValidValue(value);
+                _Blok = StructuralObject.SetValidValue(value, "Blok");
                 ReportPropertyChanged("Blok");
                 OnBlokChanged();
             }
@@ -16842,7 +16801,7 @@ namespace GeoDB.Model
             {
                 OnsubBlokChanging(value);
                 ReportPropertyChanging("subBlok");
-                _subBlok = StructuralObject.SetValidValue(value, false);
+                _subBlok = StructuralObject.SetValidValue(value, false, "subBlok");
                 ReportPropertyChanged("subBlok");
                 OnsubBlokChanged();
             }
@@ -16866,7 +16825,7 @@ namespace GeoDB.Model
             {
                 OnRangChanging(value);
                 ReportPropertyChanging("Rang");
-                _Rang = StructuralObject.SetValidValue(value);
+                _Rang = StructuralObject.SetValidValue(value, "Rang");
                 ReportPropertyChanged("Rang");
                 OnRangChanged();
             }
@@ -16890,7 +16849,7 @@ namespace GeoDB.Model
             {
                 OnVChanging(value);
                 ReportPropertyChanging("V");
-                _V = StructuralObject.SetValidValue(value);
+                _V = StructuralObject.SetValidValue(value, "V");
                 ReportPropertyChanged("V");
                 OnVChanged();
             }
@@ -16914,7 +16873,7 @@ namespace GeoDB.Model
             {
                 OnQChanging(value);
                 ReportPropertyChanging("Q");
-                _Q = StructuralObject.SetValidValue(value);
+                _Q = StructuralObject.SetValidValue(value, "Q");
                 ReportPropertyChanged("Q");
                 OnQChanged();
             }
@@ -16938,7 +16897,7 @@ namespace GeoDB.Model
             {
                 OnCcpChanging(value);
                 ReportPropertyChanging("Ccp");
-                _Ccp = StructuralObject.SetValidValue(value);
+                _Ccp = StructuralObject.SetValidValue(value, "Ccp");
                 ReportPropertyChanged("Ccp");
                 OnCcpChanged();
             }
@@ -16962,7 +16921,7 @@ namespace GeoDB.Model
             {
                 OnMChanging(value);
                 ReportPropertyChanging("M");
-                _M = StructuralObject.SetValidValue(value);
+                _M = StructuralObject.SetValidValue(value, "M");
                 ReportPropertyChanged("M");
                 OnMChanged();
             }
@@ -16986,7 +16945,7 @@ namespace GeoDB.Model
             {
                 OnCommentChanging(value);
                 ReportPropertyChanging("Comment");
-                _Comment = StructuralObject.SetValidValue(value, false);
+                _Comment = StructuralObject.SetValidValue(value, false, "Comment");
                 ReportPropertyChanged("Comment");
                 OnCommentChanged();
             }
@@ -17010,7 +16969,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -17034,7 +16993,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -17058,7 +17017,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -17069,7 +17028,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -17191,7 +17149,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -17208,7 +17166,7 @@ namespace GeoDB.Model
             {
                 OnIDChanging(value);
                 ReportPropertyChanging("ID");
-                _ID = StructuralObject.SetValidValue(value);
+                _ID = StructuralObject.SetValidValue(value, "ID");
                 ReportPropertyChanged("ID");
                 OnIDChanged();
             }
@@ -17232,7 +17190,7 @@ namespace GeoDB.Model
             {
                 OnPitChanging(value);
                 ReportPropertyChanging("Pit");
-                _Pit = StructuralObject.SetValidValue(value);
+                _Pit = StructuralObject.SetValidValue(value, "Pit");
                 ReportPropertyChanged("Pit");
                 OnPitChanged();
             }
@@ -17258,7 +17216,7 @@ namespace GeoDB.Model
                 {
                     OnEND_DATEChanging(value);
                     ReportPropertyChanging("END_DATE");
-                    _END_DATE = StructuralObject.SetValidValue(value);
+                    _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                     ReportPropertyChanged("END_DATE");
                     OnEND_DATEChanged();
                 }
@@ -17285,7 +17243,7 @@ namespace GeoDB.Model
                 {
                     OnSmenaChanging(value);
                     ReportPropertyChanging("Smena");
-                    _Smena = StructuralObject.SetValidValue(value);
+                    _Smena = StructuralObject.SetValidValue(value, "Smena");
                     ReportPropertyChanged("Smena");
                     OnSmenaChanged();
                 }
@@ -17312,7 +17270,7 @@ namespace GeoDB.Model
                 {
                     OnMoverChanging(value);
                     ReportPropertyChanging("Mover");
-                    _Mover = StructuralObject.SetValidValue(value);
+                    _Mover = StructuralObject.SetValidValue(value, "Mover");
                     ReportPropertyChanged("Mover");
                     OnMoverChanged();
                 }
@@ -17339,7 +17297,7 @@ namespace GeoDB.Model
                 {
                     OnBenchChanging(value);
                     ReportPropertyChanging("Bench");
-                    _Bench = StructuralObject.SetValidValue(value);
+                    _Bench = StructuralObject.SetValidValue(value, "Bench");
                     ReportPropertyChanged("Bench");
                     OnBenchChanged();
                 }
@@ -17366,7 +17324,7 @@ namespace GeoDB.Model
                 {
                     OnBlokChanging(value);
                     ReportPropertyChanging("Blok");
-                    _Blok = StructuralObject.SetValidValue(value);
+                    _Blok = StructuralObject.SetValidValue(value, "Blok");
                     ReportPropertyChanged("Blok");
                     OnBlokChanged();
                 }
@@ -17393,7 +17351,7 @@ namespace GeoDB.Model
                 {
                     OnsubBlokChanging(value);
                     ReportPropertyChanging("subBlok");
-                    _subBlok = StructuralObject.SetValidValue(value, false);
+                    _subBlok = StructuralObject.SetValidValue(value, false, "subBlok");
                     ReportPropertyChanged("subBlok");
                     OnsubBlokChanged();
                 }
@@ -17420,7 +17378,7 @@ namespace GeoDB.Model
                 {
                     OnRangChanging(value);
                     ReportPropertyChanging("Rang");
-                    _Rang = StructuralObject.SetValidValue(value);
+                    _Rang = StructuralObject.SetValidValue(value, "Rang");
                     ReportPropertyChanged("Rang");
                     OnRangChanged();
                 }
@@ -17445,7 +17403,7 @@ namespace GeoDB.Model
             {
                 OnVChanging(value);
                 ReportPropertyChanging("V");
-                _V = StructuralObject.SetValidValue(value);
+                _V = StructuralObject.SetValidValue(value, "V");
                 ReportPropertyChanged("V");
                 OnVChanged();
             }
@@ -17469,7 +17427,7 @@ namespace GeoDB.Model
             {
                 OnQChanging(value);
                 ReportPropertyChanging("Q");
-                _Q = StructuralObject.SetValidValue(value);
+                _Q = StructuralObject.SetValidValue(value, "Q");
                 ReportPropertyChanged("Q");
                 OnQChanged();
             }
@@ -17493,7 +17451,7 @@ namespace GeoDB.Model
             {
                 OnCcpChanging(value);
                 ReportPropertyChanging("Ccp");
-                _Ccp = StructuralObject.SetValidValue(value);
+                _Ccp = StructuralObject.SetValidValue(value, "Ccp");
                 ReportPropertyChanged("Ccp");
                 OnCcpChanged();
             }
@@ -17517,7 +17475,7 @@ namespace GeoDB.Model
             {
                 OnMChanging(value);
                 ReportPropertyChanging("M");
-                _M = StructuralObject.SetValidValue(value);
+                _M = StructuralObject.SetValidValue(value, "M");
                 ReportPropertyChanged("M");
                 OnMChanged();
             }
@@ -17541,7 +17499,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -17565,7 +17523,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -17589,7 +17547,7 @@ namespace GeoDB.Model
             {
                 OnHostChanging(value);
                 ReportPropertyChanging("Host");
-                _Host = StructuralObject.SetValidValue(value, true);
+                _Host = StructuralObject.SetValidValue(value, true, "Host");
                 ReportPropertyChanged("Host");
                 OnHostChanged();
             }
@@ -17613,7 +17571,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -17624,7 +17582,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -17844,7 +17801,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -17863,7 +17820,7 @@ namespace GeoDB.Model
                 {
                     OnКодChanging(value);
                     ReportPropertyChanging("Код");
-                    _Код = StructuralObject.SetValidValue(value);
+                    _Код = StructuralObject.SetValidValue(value, "Код");
                     ReportPropertyChanged("Код");
                     OnКодChanged();
                 }
@@ -17888,7 +17845,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -17912,7 +17869,7 @@ namespace GeoDB.Model
             {
                 OnSMENAChanging(value);
                 ReportPropertyChanging("SMENA");
-                _SMENA = StructuralObject.SetValidValue(value);
+                _SMENA = StructuralObject.SetValidValue(value, "SMENA");
                 ReportPropertyChanged("SMENA");
                 OnSMENAChanged();
             }
@@ -17936,7 +17893,7 @@ namespace GeoDB.Model
             {
                 OnSektorChanging(value);
                 ReportPropertyChanging("Sektor");
-                _Sektor = StructuralObject.SetValidValue(value);
+                _Sektor = StructuralObject.SetValidValue(value, "Sektor");
                 ReportPropertyChanged("Sektor");
                 OnSektorChanged();
             }
@@ -17960,7 +17917,7 @@ namespace GeoDB.Model
             {
                 OnR_zoneChanging(value);
                 ReportPropertyChanging("R_zone");
-                _R_zone = StructuralObject.SetValidValue(value);
+                _R_zone = StructuralObject.SetValidValue(value, "R_zone");
                 ReportPropertyChanged("R_zone");
                 OnR_zoneChanged();
             }
@@ -17984,7 +17941,7 @@ namespace GeoDB.Model
             {
                 OnSektor1Changing(value);
                 ReportPropertyChanging("Sektor1");
-                _Sektor1 = StructuralObject.SetValidValue(value);
+                _Sektor1 = StructuralObject.SetValidValue(value, "Sektor1");
                 ReportPropertyChanged("Sektor1");
                 OnSektor1Changed();
             }
@@ -18008,7 +17965,7 @@ namespace GeoDB.Model
             {
                 OnSektor2Changing(value);
                 ReportPropertyChanging("Sektor2");
-                _Sektor2 = StructuralObject.SetValidValue(value);
+                _Sektor2 = StructuralObject.SetValidValue(value, "Sektor2");
                 ReportPropertyChanged("Sektor2");
                 OnSektor2Changed();
             }
@@ -18032,7 +17989,7 @@ namespace GeoDB.Model
             {
                 OnBunker1Changing(value);
                 ReportPropertyChanging("Bunker1");
-                _Bunker1 = StructuralObject.SetValidValue(value);
+                _Bunker1 = StructuralObject.SetValidValue(value, "Bunker1");
                 ReportPropertyChanged("Bunker1");
                 OnBunker1Changed();
             }
@@ -18056,7 +18013,7 @@ namespace GeoDB.Model
             {
                 OnBunker2Changing(value);
                 ReportPropertyChanging("Bunker2");
-                _Bunker2 = StructuralObject.SetValidValue(value);
+                _Bunker2 = StructuralObject.SetValidValue(value, "Bunker2");
                 ReportPropertyChanged("Bunker2");
                 OnBunker2Changed();
             }
@@ -18080,7 +18037,7 @@ namespace GeoDB.Model
             {
                 OnMill1Changing(value);
                 ReportPropertyChanging("Mill1");
-                _Mill1 = StructuralObject.SetValidValue(value);
+                _Mill1 = StructuralObject.SetValidValue(value, "Mill1");
                 ReportPropertyChanged("Mill1");
                 OnMill1Changed();
             }
@@ -18104,7 +18061,7 @@ namespace GeoDB.Model
             {
                 OnMill2Changing(value);
                 ReportPropertyChanging("Mill2");
-                _Mill2 = StructuralObject.SetValidValue(value);
+                _Mill2 = StructuralObject.SetValidValue(value, "Mill2");
                 ReportPropertyChanged("Mill2");
                 OnMill2Changed();
             }
@@ -18128,7 +18085,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -18152,7 +18109,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -18176,7 +18133,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -18187,7 +18144,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -18337,7 +18293,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -18354,7 +18310,7 @@ namespace GeoDB.Model
             {
                 OnIDChanging(value);
                 ReportPropertyChanging("ID");
-                _ID = StructuralObject.SetValidValue(value);
+                _ID = StructuralObject.SetValidValue(value, "ID");
                 ReportPropertyChanged("ID");
                 OnIDChanged();
             }
@@ -18380,7 +18336,7 @@ namespace GeoDB.Model
                 {
                     OnAreaIDChanging(value);
                     ReportPropertyChanging("AreaID");
-                    _AreaID = StructuralObject.SetValidValue(value);
+                    _AreaID = StructuralObject.SetValidValue(value, "AreaID");
                     ReportPropertyChanged("AreaID");
                     OnAreaIDChanged();
                 }
@@ -18407,7 +18363,7 @@ namespace GeoDB.Model
                 {
                     OnDateSaldoChanging(value);
                     ReportPropertyChanging("DateSaldo");
-                    _DateSaldo = StructuralObject.SetValidValue(value);
+                    _DateSaldo = StructuralObject.SetValidValue(value, "DateSaldo");
                     ReportPropertyChanged("DateSaldo");
                     OnDateSaldoChanged();
                 }
@@ -18432,7 +18388,7 @@ namespace GeoDB.Model
             {
                 OnVChanging(value);
                 ReportPropertyChanging("V");
-                _V = StructuralObject.SetValidValue(value);
+                _V = StructuralObject.SetValidValue(value, "V");
                 ReportPropertyChanged("V");
                 OnVChanged();
             }
@@ -18456,7 +18412,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -18480,7 +18436,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -18491,7 +18447,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -18559,7 +18514,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -18578,7 +18533,7 @@ namespace GeoDB.Model
                 {
                     OnКодChanging(value);
                     ReportPropertyChanging("Код");
-                    _Код = StructuralObject.SetValidValue(value);
+                    _Код = StructuralObject.SetValidValue(value, "Код");
                     ReportPropertyChanged("Код");
                     OnКодChanged();
                 }
@@ -18603,7 +18558,7 @@ namespace GeoDB.Model
             {
                 OnEND_DATEChanging(value);
                 ReportPropertyChanging("END_DATE");
-                _END_DATE = StructuralObject.SetValidValue(value);
+                _END_DATE = StructuralObject.SetValidValue(value, "END_DATE");
                 ReportPropertyChanged("END_DATE");
                 OnEND_DATEChanged();
             }
@@ -18627,7 +18582,7 @@ namespace GeoDB.Model
             {
                 OnSmenaChanging(value);
                 ReportPropertyChanging("Smena");
-                _Smena = StructuralObject.SetValidValue(value);
+                _Smena = StructuralObject.SetValidValue(value, "Smena");
                 ReportPropertyChanged("Smena");
                 OnSmenaChanged();
             }
@@ -18651,7 +18606,7 @@ namespace GeoDB.Model
             {
                 OnQ_ZIFChanging(value);
                 ReportPropertyChanging("Q_ZIF");
-                _Q_ZIF = StructuralObject.SetValidValue(value);
+                _Q_ZIF = StructuralObject.SetValidValue(value, "Q_ZIF");
                 ReportPropertyChanged("Q_ZIF");
                 OnQ_ZIFChanged();
             }
@@ -18675,7 +18630,7 @@ namespace GeoDB.Model
             {
                 OnCcpChanging(value);
                 ReportPropertyChanging("Ccp");
-                _Ccp = StructuralObject.SetValidValue(value);
+                _Ccp = StructuralObject.SetValidValue(value, "Ccp");
                 ReportPropertyChanged("Ccp");
                 OnCcpChanged();
             }
@@ -18699,7 +18654,7 @@ namespace GeoDB.Model
             {
                 OnMChanging(value);
                 ReportPropertyChanging("M");
-                _M = StructuralObject.SetValidValue(value);
+                _M = StructuralObject.SetValidValue(value, "M");
                 ReportPropertyChanged("M");
                 OnMChanged();
             }
@@ -18723,7 +18678,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -18747,7 +18702,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -18771,7 +18726,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -18782,7 +18737,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -18852,7 +18806,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -18871,7 +18825,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -18896,7 +18850,7 @@ namespace GeoDB.Model
             {
                 OnSECTOR1Changing(value);
                 ReportPropertyChanging("SECTOR1");
-                _SECTOR1 = StructuralObject.SetValidValue(value, false);
+                _SECTOR1 = StructuralObject.SetValidValue(value, false, "SECTOR1");
                 ReportPropertyChanged("SECTOR1");
                 OnSECTOR1Changed();
             }
@@ -18920,7 +18874,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -18944,7 +18898,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -18968,7 +18922,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -18979,7 +18933,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -19085,7 +19038,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -19104,7 +19057,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -19129,7 +19082,7 @@ namespace GeoDB.Model
             {
                 OnSAMPLEChanging(value);
                 ReportPropertyChanging("SAMPLE");
-                _SAMPLE = StructuralObject.SetValidValue(value, false);
+                _SAMPLE = StructuralObject.SetValidValue(value, false, "SAMPLE");
                 ReportPropertyChanged("SAMPLE");
                 OnSAMPLEChanged();
             }
@@ -19153,7 +19106,7 @@ namespace GeoDB.Model
             {
                 OnFROMChanging(value);
                 ReportPropertyChanging("FROM");
-                _FROM = StructuralObject.SetValidValue(value);
+                _FROM = StructuralObject.SetValidValue(value, "FROM");
                 ReportPropertyChanged("FROM");
                 OnFROMChanged();
             }
@@ -19177,7 +19130,7 @@ namespace GeoDB.Model
             {
                 OnTOChanging(value);
                 ReportPropertyChanging("TO");
-                _TO = StructuralObject.SetValidValue(value);
+                _TO = StructuralObject.SetValidValue(value, "TO");
                 ReportPropertyChanged("TO");
                 OnTOChanged();
             }
@@ -19201,7 +19154,7 @@ namespace GeoDB.Model
             {
                 OnLENGTHChanging(value);
                 ReportPropertyChanging("LENGTH");
-                _LENGTH = StructuralObject.SetValidValue(value);
+                _LENGTH = StructuralObject.SetValidValue(value, "LENGTH");
                 ReportPropertyChanged("LENGTH");
                 OnLENGTHChanged();
             }
@@ -19225,7 +19178,7 @@ namespace GeoDB.Model
             {
                 OnVES_SAMPLEChanging(value);
                 ReportPropertyChanging("VES_SAMPLE");
-                _VES_SAMPLE = StructuralObject.SetValidValue(value);
+                _VES_SAMPLE = StructuralObject.SetValidValue(value, "VES_SAMPLE");
                 ReportPropertyChanged("VES_SAMPLE");
                 OnVES_SAMPLEChanged();
             }
@@ -19249,7 +19202,7 @@ namespace GeoDB.Model
             {
                 OnAUChanging(value);
                 ReportPropertyChanging("AU");
-                _AU = StructuralObject.SetValidValue(value);
+                _AU = StructuralObject.SetValidValue(value, "AU");
                 ReportPropertyChanged("AU");
                 OnAUChanged();
             }
@@ -19273,7 +19226,7 @@ namespace GeoDB.Model
             {
                 OnASChanging(value);
                 ReportPropertyChanging("AS");
-                _AS = StructuralObject.SetValidValue(value);
+                _AS = StructuralObject.SetValidValue(value, "AS");
                 ReportPropertyChanged("AS");
                 OnASChanged();
             }
@@ -19297,7 +19250,7 @@ namespace GeoDB.Model
             {
                 OnSbChanging(value);
                 ReportPropertyChanging("Sb");
-                _Sb = StructuralObject.SetValidValue(value);
+                _Sb = StructuralObject.SetValidValue(value, "Sb");
                 ReportPropertyChanged("Sb");
                 OnSbChanged();
             }
@@ -19321,7 +19274,7 @@ namespace GeoDB.Model
             {
                 OnSChanging(value);
                 ReportPropertyChanging("S");
-                _S = StructuralObject.SetValidValue(value);
+                _S = StructuralObject.SetValidValue(value, "S");
                 ReportPropertyChanged("S");
                 OnSChanged();
             }
@@ -19345,7 +19298,7 @@ namespace GeoDB.Model
             {
                 OnCaChanging(value);
                 ReportPropertyChanging("Ca");
-                _Ca = StructuralObject.SetValidValue(value);
+                _Ca = StructuralObject.SetValidValue(value, "Ca");
                 ReportPropertyChanged("Ca");
                 OnCaChanged();
             }
@@ -19369,7 +19322,7 @@ namespace GeoDB.Model
             {
                 OnFeChanging(value);
                 ReportPropertyChanging("Fe");
-                _Fe = StructuralObject.SetValidValue(value);
+                _Fe = StructuralObject.SetValidValue(value, "Fe");
                 ReportPropertyChanged("Fe");
                 OnFeChanged();
             }
@@ -19393,7 +19346,7 @@ namespace GeoDB.Model
             {
                 OnAgChanging(value);
                 ReportPropertyChanging("Ag");
-                _Ag = StructuralObject.SetValidValue(value);
+                _Ag = StructuralObject.SetValidValue(value, "Ag");
                 ReportPropertyChanged("Ag");
                 OnAgChanged();
             }
@@ -19417,7 +19370,7 @@ namespace GeoDB.Model
             {
                 OnCChanging(value);
                 ReportPropertyChanging("C");
-                _C = StructuralObject.SetValidValue(value);
+                _C = StructuralObject.SetValidValue(value, "C");
                 ReportPropertyChanged("C");
                 OnCChanged();
             }
@@ -19441,7 +19394,7 @@ namespace GeoDB.Model
             {
                 OnBLANKChanging(value);
                 ReportPropertyChanging("BLANK");
-                _BLANK = StructuralObject.SetValidValue(value);
+                _BLANK = StructuralObject.SetValidValue(value, "BLANK");
                 ReportPropertyChanged("BLANK");
                 OnBLANKChanged();
             }
@@ -19465,7 +19418,7 @@ namespace GeoDB.Model
             {
                 OnGEOLOGISTChanging(value);
                 ReportPropertyChanging("GEOLOGIST");
-                _GEOLOGIST = StructuralObject.SetValidValue(value);
+                _GEOLOGIST = StructuralObject.SetValidValue(value, "GEOLOGIST");
                 ReportPropertyChanged("GEOLOGIST");
                 OnGEOLOGISTChanged();
             }
@@ -19489,7 +19442,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -19513,7 +19466,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -19537,7 +19490,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -19548,7 +19501,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -19656,7 +19608,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -19675,7 +19627,7 @@ namespace GeoDB.Model
                 {
                     OnidChanging(value);
                     ReportPropertyChanging("id");
-                    _id = StructuralObject.SetValidValue(value);
+                    _id = StructuralObject.SetValidValue(value, "id");
                     ReportPropertyChanged("id");
                     OnidChanged();
                 }
@@ -19700,7 +19652,7 @@ namespace GeoDB.Model
             {
                 OnDescrChanging(value);
                 ReportPropertyChanging("Descr");
-                _Descr = StructuralObject.SetValidValue(value, false);
+                _Descr = StructuralObject.SetValidValue(value, false, "Descr");
                 ReportPropertyChanged("Descr");
                 OnDescrChanged();
             }
@@ -19724,7 +19676,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -19748,7 +19700,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -19759,7 +19711,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -19881,7 +19832,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -19900,7 +19851,7 @@ namespace GeoDB.Model
                 {
                     OnidChanging(value);
                     ReportPropertyChanging("id");
-                    _id = StructuralObject.SetValidValue(value);
+                    _id = StructuralObject.SetValidValue(value, "id");
                     ReportPropertyChanged("id");
                     OnidChanged();
                 }
@@ -19925,7 +19876,7 @@ namespace GeoDB.Model
             {
                 OnAreaIDChanging(value);
                 ReportPropertyChanging("AreaID");
-                _AreaID = StructuralObject.SetValidValue(value);
+                _AreaID = StructuralObject.SetValidValue(value, "AreaID");
                 ReportPropertyChanged("AreaID");
                 OnAreaIDChanged();
             }
@@ -19949,7 +19900,7 @@ namespace GeoDB.Model
             {
                 OnDirectionChanging(value);
                 ReportPropertyChanging("Direction");
-                _Direction = StructuralObject.SetValidValue(value, false);
+                _Direction = StructuralObject.SetValidValue(value, false, "Direction");
                 ReportPropertyChanged("Direction");
                 OnDirectionChanged();
             }
@@ -19973,7 +19924,7 @@ namespace GeoDB.Model
             {
                 OnRepPlaceChanging(value);
                 ReportPropertyChanging("RepPlace");
-                _RepPlace = StructuralObject.SetValidValue(value);
+                _RepPlace = StructuralObject.SetValidValue(value, "RepPlace");
                 ReportPropertyChanged("RepPlace");
                 OnRepPlaceChanged();
             }
@@ -19997,7 +19948,7 @@ namespace GeoDB.Model
             {
                 OnGroupIDChanging(value);
                 ReportPropertyChanging("GroupID");
-                _GroupID = StructuralObject.SetValidValue(value);
+                _GroupID = StructuralObject.SetValidValue(value, "GroupID");
                 ReportPropertyChanged("GroupID");
                 OnGroupIDChanged();
             }
@@ -20021,7 +19972,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -20045,7 +19996,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -20056,7 +20007,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -20164,7 +20114,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -20183,7 +20133,7 @@ namespace GeoDB.Model
                 {
                     OnidChanging(value);
                     ReportPropertyChanging("id");
-                    _id = StructuralObject.SetValidValue(value);
+                    _id = StructuralObject.SetValidValue(value, "id");
                     ReportPropertyChanged("id");
                     OnidChanged();
                 }
@@ -20208,7 +20158,7 @@ namespace GeoDB.Model
             {
                 OnAreaIDChanging(value);
                 ReportPropertyChanging("AreaID");
-                _AreaID = StructuralObject.SetValidValue(value);
+                _AreaID = StructuralObject.SetValidValue(value, "AreaID");
                 ReportPropertyChanged("AreaID");
                 OnAreaIDChanged();
             }
@@ -20232,7 +20182,7 @@ namespace GeoDB.Model
             {
                 OnRepPlaceChanging(value);
                 ReportPropertyChanging("RepPlace");
-                _RepPlace = StructuralObject.SetValidValue(value);
+                _RepPlace = StructuralObject.SetValidValue(value, "RepPlace");
                 ReportPropertyChanged("RepPlace");
                 OnRepPlaceChanged();
             }
@@ -20256,7 +20206,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -20280,7 +20230,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -20291,7 +20241,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -20345,7 +20294,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -20364,7 +20313,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -20389,7 +20338,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -20413,7 +20362,7 @@ namespace GeoDB.Model
             {
                 OnATChanging(value);
                 ReportPropertyChanging("AT");
-                _AT = StructuralObject.SetValidValue(value);
+                _AT = StructuralObject.SetValidValue(value, "AT");
                 ReportPropertyChanged("AT");
                 OnATChanged();
             }
@@ -20437,7 +20386,7 @@ namespace GeoDB.Model
             {
                 OnBRGChanging(value);
                 ReportPropertyChanging("BRG");
-                _BRG = StructuralObject.SetValidValue(value);
+                _BRG = StructuralObject.SetValidValue(value, "BRG");
                 ReportPropertyChanged("BRG");
                 OnBRGChanged();
             }
@@ -20461,7 +20410,7 @@ namespace GeoDB.Model
             {
                 OnDIPChanging(value);
                 ReportPropertyChanging("DIP");
-                _DIP = StructuralObject.SetValidValue(value);
+                _DIP = StructuralObject.SetValidValue(value, "DIP");
                 ReportPropertyChanged("DIP");
                 OnDIPChanged();
             }
@@ -20485,7 +20434,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -20509,7 +20458,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -20533,7 +20482,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -20544,7 +20493,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -20614,7 +20562,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -20633,7 +20581,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -20658,7 +20606,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -20682,7 +20630,7 @@ namespace GeoDB.Model
             {
                 OnATChanging(value);
                 ReportPropertyChanging("AT");
-                _AT = StructuralObject.SetValidValue(value);
+                _AT = StructuralObject.SetValidValue(value, "AT");
                 ReportPropertyChanged("AT");
                 OnATChanged();
             }
@@ -20706,7 +20654,7 @@ namespace GeoDB.Model
             {
                 OnBRGChanging(value);
                 ReportPropertyChanging("BRG");
-                _BRG = StructuralObject.SetValidValue(value);
+                _BRG = StructuralObject.SetValidValue(value, "BRG");
                 ReportPropertyChanged("BRG");
                 OnBRGChanged();
             }
@@ -20730,7 +20678,7 @@ namespace GeoDB.Model
             {
                 OnDIPChanging(value);
                 ReportPropertyChanging("DIP");
-                _DIP = StructuralObject.SetValidValue(value);
+                _DIP = StructuralObject.SetValidValue(value, "DIP");
                 ReportPropertyChanged("DIP");
                 OnDIPChanged();
             }
@@ -20754,7 +20702,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -20778,7 +20726,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -20789,7 +20737,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
     }
     
     /// <summary>
@@ -20817,7 +20764,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -20836,7 +20783,7 @@ namespace GeoDB.Model
                 {
                     OnIDChanging(value);
                     ReportPropertyChanging("ID");
-                    _ID = StructuralObject.SetValidValue(value);
+                    _ID = StructuralObject.SetValidValue(value, "ID");
                     ReportPropertyChanged("ID");
                     OnIDChanged();
                 }
@@ -20861,7 +20808,7 @@ namespace GeoDB.Model
             {
                 OnBHIDChanging(value);
                 ReportPropertyChanging("BHID");
-                _BHID = StructuralObject.SetValidValue(value);
+                _BHID = StructuralObject.SetValidValue(value, "BHID");
                 ReportPropertyChanged("BHID");
                 OnBHIDChanged();
             }
@@ -20885,7 +20832,7 @@ namespace GeoDB.Model
             {
                 OnATChanging(value);
                 ReportPropertyChanging("AT");
-                _AT = StructuralObject.SetValidValue(value);
+                _AT = StructuralObject.SetValidValue(value, "AT");
                 ReportPropertyChanged("AT");
                 OnATChanged();
             }
@@ -20909,7 +20856,7 @@ namespace GeoDB.Model
             {
                 OnBRGChanging(value);
                 ReportPropertyChanging("BRG");
-                _BRG = StructuralObject.SetValidValue(value);
+                _BRG = StructuralObject.SetValidValue(value, "BRG");
                 ReportPropertyChanged("BRG");
                 OnBRGChanged();
             }
@@ -20933,7 +20880,7 @@ namespace GeoDB.Model
             {
                 OnDIPChanging(value);
                 ReportPropertyChanging("DIP");
-                _DIP = StructuralObject.SetValidValue(value);
+                _DIP = StructuralObject.SetValidValue(value, "DIP");
                 ReportPropertyChanged("DIP");
                 OnDIPChanged();
             }
@@ -20957,7 +20904,7 @@ namespace GeoDB.Model
             {
                 OnLastUserIDChanging(value);
                 ReportPropertyChanging("LastUserID");
-                _LastUserID = StructuralObject.SetValidValue(value);
+                _LastUserID = StructuralObject.SetValidValue(value, "LastUserID");
                 ReportPropertyChanged("LastUserID");
                 OnLastUserIDChanged();
             }
@@ -20981,7 +20928,7 @@ namespace GeoDB.Model
             {
                 OnLastDTChanging(value);
                 ReportPropertyChanging("LastDT");
-                _LastDT = StructuralObject.SetValidValue(value);
+                _LastDT = StructuralObject.SetValidValue(value, "LastDT");
                 ReportPropertyChanged("LastDT");
                 OnLastDTChanged();
             }
@@ -21005,7 +20952,7 @@ namespace GeoDB.Model
             {
                 Onupsize_tsChanging(value);
                 ReportPropertyChanging("upsize_ts");
-                _upsize_ts = StructuralObject.SetValidValue(value, true);
+                _upsize_ts = StructuralObject.SetValidValue(value, true, "upsize_ts");
                 ReportPropertyChanged("upsize_ts");
                 Onupsize_tsChanged();
             }
@@ -21016,7 +20963,6 @@ namespace GeoDB.Model
 
         #endregion
 
-    
         #region Navigation Properties
     
         /// <summary>
@@ -21088,7 +21034,7 @@ namespace GeoDB.Model
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -21105,7 +21051,7 @@ namespace GeoDB.Model
             {
                 OnnameChanging(value);
                 ReportPropertyChanging("name");
-                _name = StructuralObject.SetValidValue(value, false);
+                _name = StructuralObject.SetValidValue(value, false, "name");
                 ReportPropertyChanged("name");
                 OnnameChanged();
             }
@@ -21129,7 +21075,7 @@ namespace GeoDB.Model
             {
                 Onprincipal_idChanging(value);
                 ReportPropertyChanging("principal_id");
-                _principal_id = StructuralObject.SetValidValue(value);
+                _principal_id = StructuralObject.SetValidValue(value, "principal_id");
                 ReportPropertyChanged("principal_id");
                 Onprincipal_idChanged();
             }
@@ -21155,7 +21101,7 @@ namespace GeoDB.Model
                 {
                     Ondiagram_idChanging(value);
                     ReportPropertyChanging("diagram_id");
-                    _diagram_id = StructuralObject.SetValidValue(value);
+                    _diagram_id = StructuralObject.SetValidValue(value, "diagram_id");
                     ReportPropertyChanged("diagram_id");
                     Ondiagram_idChanged();
                 }
@@ -21180,7 +21126,7 @@ namespace GeoDB.Model
             {
                 OnversionChanging(value);
                 ReportPropertyChanging("version");
-                _version = StructuralObject.SetValidValue(value);
+                _version = StructuralObject.SetValidValue(value, "version");
                 ReportPropertyChanged("version");
                 OnversionChanged();
             }
@@ -21204,7 +21150,7 @@ namespace GeoDB.Model
             {
                 OndefinitionChanging(value);
                 ReportPropertyChanging("definition");
-                _definition = StructuralObject.SetValidValue(value, true);
+                _definition = StructuralObject.SetValidValue(value, true, "definition");
                 ReportPropertyChanged("definition");
                 OndefinitionChanged();
             }
@@ -21215,10 +21161,8 @@ namespace GeoDB.Model
 
         #endregion
 
-    
     }
 
     #endregion
 
-    
 }

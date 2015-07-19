@@ -1,41 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
   <!-- EF Runtime content -->
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+      <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityContainer Name="ModelStoreContainer">
-          <EntitySet Name="ASSAYS" EntityType="Model.Store.ASSAYS" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ASSAYS_DMP" EntityType="Model.Store.ASSAYS_DMP" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ASSAYS_OR" EntityType="Model.Store.ASSAYS_OR" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ASSAYS_STRG" EntityType="Model.Store.ASSAYS_STRG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ASSAYS2" EntityType="Model.Store.ASSAYS2" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="ASSAYS2_CS" EntityType="Model.Store.ASSAYS2_CS" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="BLOCK_ZAPASOV" EntityType="Model.Store.BLOCK_ZAPASOV" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="COLLAR" EntityType="Model.Store.COLLAR" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="COLLAR_DMP" EntityType="Model.Store.COLLAR_DMP" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="COLLAR_OR" EntityType="Model.Store.COLLAR_OR" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="COLLAR_STRG" EntityType="Model.Store.COLLAR_STRG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="COLLAR2" EntityType="Model.Store.COLLAR2" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="DOMEN" EntityType="Model.Store.DOMEN" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="DRILLING_TYPE" EntityType="Model.Store.DRILLING_TYPE" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="DUMP_BALANS" EntityType="Model.Store.DUMP_BALANS" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Flows" EntityType="Model.Store.Flows" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="GEOLOGIST" EntityType="Model.Store.GEOLOGIST" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="GORIZONT" EntityType="Model.Store.GORIZONT" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="HOLE" EntityType="Model.Store.HOLE" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="JOURNAL" EntityType="Model.Store.JOURNAL" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="LITOLOGY" EntityType="Model.Store.LITOLOGY" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="MOVER" EntityType="Model.Store.MOVER" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Q_Mes" EntityType="Model.Store.Q_Mes" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Q_pit" EntityType="Model.Store.Q_pit" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Q_sm" EntityType="Model.Store.Q_sm" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Q_YEAR" EntityType="Model.Store.Q_YEAR" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="Q_zone" EntityType="Model.Store.Q_zone" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="QBLOK" EntityType="Model.Store.QBLOK" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="QCONTROL" EntityType="Model.Store.QCONTROL" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="QFACE" EntityType="Model.Store.QFACE" store:Type="Tables" store:Schema="dbo" store:Name="QFACE">
+          <EntitySet Name="ASSAYS" EntityType="Model.Store.ASSAYS" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ASSAYS_DMP" EntityType="Model.Store.ASSAYS_DMP" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ASSAYS_OR" EntityType="Model.Store.ASSAYS_OR" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ASSAYS_STRG" EntityType="Model.Store.ASSAYS_STRG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ASSAYS2" EntityType="Model.Store.ASSAYS2" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ASSAYS2_CS" EntityType="Model.Store.ASSAYS2_CS" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="BLOCK_ZAPASOV" EntityType="Model.Store.BLOCK_ZAPASOV" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="COLLAR" EntityType="Model.Store.COLLAR" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="COLLAR_DMP" EntityType="Model.Store.COLLAR_DMP" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="COLLAR_OR" EntityType="Model.Store.COLLAR_OR" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="COLLAR_STRG" EntityType="Model.Store.COLLAR_STRG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="COLLAR2" EntityType="Model.Store.COLLAR2" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="DOMEN" EntityType="Model.Store.DOMEN" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="DRILLING_TYPE" EntityType="Model.Store.DRILLING_TYPE" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="DUMP_BALANS" EntityType="Model.Store.DUMP_BALANS" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Flows" EntityType="Model.Store.Flows" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="GEOLOGIST" EntityType="Model.Store.GEOLOGIST" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="GORIZONT" EntityType="Model.Store.GORIZONT" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HOLE" EntityType="Model.Store.HOLE" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="JOURNAL" EntityType="Model.Store.JOURNAL" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="LITOLOGY" EntityType="Model.Store.LITOLOGY" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="MOVER" EntityType="Model.Store.MOVER" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Q_Mes" EntityType="Model.Store.Q_Mes" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Q_pit" EntityType="Model.Store.Q_pit" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Q_sm" EntityType="Model.Store.Q_sm" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Q_YEAR" EntityType="Model.Store.Q_YEAR" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="Q_zone" EntityType="Model.Store.Q_zone" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="QBLOK" EntityType="Model.Store.QBLOK" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="QCONTROL" EntityType="Model.Store.QCONTROL" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="QFACE" EntityType="Model.Store.QFACE" store:Type="Tables" store:Schema="dbo" store:Name="QFACE" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
             <DefiningQuery>SELECT 
       [QFACE].[ID] AS [ID], 
       [QFACE].[SAMPLE] AS [SAMPLE], 
@@ -61,16 +61,16 @@
       [QFACE].[upsize_ts] AS [upsize_ts]
       FROM [dbo].[QFACE] AS [QFACE]</DefiningQuery>
           </EntitySet>
-          <EntitySet Name="RANG" EntityType="Model.Store.RANG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="REESTR_VEDOMOSTEI" EntityType="Model.Store.REESTR_VEDOMOSTEI" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="REESTR_VEDOMOSTEI_STRG" EntityType="Model.Store.REESTR_VEDOMOSTEI_STRG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="RL_EXPLO" EntityType="Model.Store.RL_EXPLO" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="RL_EXPLO2" EntityType="Model.Store.RL_EXPLO2" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="RV_GEO" EntityType="Model.Store.RV_GEO" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="RV_GEO_STRG" EntityType="Model.Store.RV_GEO_STRG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="RV_GRP" EntityType="Model.Store.RV_GRP" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="RV_GRP_STRG" EntityType="Model.Store.RV_GRP_STRG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="RV_PAL" EntityType="Model.Store.RV_PAL" store:Type="Tables" store:Schema="dbo" store:Name="RV_PAL">
+          <EntitySet Name="RANG" EntityType="Model.Store.RANG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="REESTR_VEDOMOSTEI" EntityType="Model.Store.REESTR_VEDOMOSTEI" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="REESTR_VEDOMOSTEI_STRG" EntityType="Model.Store.REESTR_VEDOMOSTEI_STRG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RL_EXPLO" EntityType="Model.Store.RL_EXPLO" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RL_EXPLO2" EntityType="Model.Store.RL_EXPLO2" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RV_GEO" EntityType="Model.Store.RV_GEO" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RV_GEO_STRG" EntityType="Model.Store.RV_GEO_STRG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RV_GRP" EntityType="Model.Store.RV_GRP" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RV_GRP_STRG" EntityType="Model.Store.RV_GRP_STRG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="RV_PAL" EntityType="Model.Store.RV_PAL" store:Type="Tables" store:Schema="dbo" store:Name="RV_PAL" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator">
             <DefiningQuery>SELECT 
       [RV_PAL].[ID_RV_PAL] AS [ID_RV_PAL], 
       [RV_PAL].[ID_RV_GEO] AS [ID_RV_GEO], 
@@ -91,21 +91,21 @@
       [RV_PAL].[upsize_ts] AS [upsize_ts]
       FROM [dbo].[RV_PAL] AS [RV_PAL]</DefiningQuery>
           </EntitySet>
-          <EntitySet Name="RV_PAL_STRG" EntityType="Model.Store.RV_PAL_STRG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="S_BLOK" EntityType="Model.Store.S_BLOK" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="S_DAY" EntityType="Model.Store.S_DAY" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="S_ORE_PIT" EntityType="Model.Store.S_ORE_PIT" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="S_SALDO" EntityType="Model.Store.S_SALDO" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="S_ZIF" EntityType="Model.Store.S_ZIF" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="SECTOR" EntityType="Model.Store.SECTOR" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="SFACE" EntityType="Model.Store.SFACE" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="sprAreas" EntityType="Model.Store.sprAreas" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="sprDirections" EntityType="Model.Store.sprDirections" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="sprOreRepGroups" EntityType="Model.Store.sprOreRepGroups" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="SURVEYS_DMP" EntityType="Model.Store.SURVEYS_DMP" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="SURVEYS_OR" EntityType="Model.Store.SURVEYS_OR" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="SURVEYS_STRG" EntityType="Model.Store.SURVEYS_STRG" store:Type="Tables" Schema="dbo" />
-          <EntitySet Name="sysdiagrams" EntityType="Model.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RV_PAL_STRG" EntityType="Model.Store.RV_PAL_STRG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="S_BLOK" EntityType="Model.Store.S_BLOK" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="S_DAY" EntityType="Model.Store.S_DAY" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="S_ORE_PIT" EntityType="Model.Store.S_ORE_PIT" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="S_SALDO" EntityType="Model.Store.S_SALDO" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="S_ZIF" EntityType="Model.Store.S_ZIF" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SECTOR" EntityType="Model.Store.SECTOR" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SFACE" EntityType="Model.Store.SFACE" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="sprAreas" EntityType="Model.Store.sprAreas" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="sprDirections" EntityType="Model.Store.sprDirections" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="sprOreRepGroups" EntityType="Model.Store.sprOreRepGroups" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SURVEYS_DMP" EntityType="Model.Store.SURVEYS_DMP" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SURVEYS_OR" EntityType="Model.Store.SURVEYS_OR" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="SURVEYS_STRG" EntityType="Model.Store.SURVEYS_STRG" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="sysdiagrams" EntityType="Model.Store.sysdiagrams" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
           <AssociationSet Name="ASSAYS_DMP_FK00" Association="Model.Store.ASSAYS_DMP_FK00">
             <End Role="COLLAR_DMP" EntitySet="COLLAR_DMP" />
             <End Role="ASSAYS_DMP" EntitySet="ASSAYS_DMP" />
@@ -2050,8 +2050,8 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
-        <EntityContainer Name="ModelDB" annotation:LazyLoadingEnabled="true">
+      <Schema Namespace="Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="ModelDB" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
           <EntitySet Name="ASSAYS" EntityType="Model.ASSAYS" />
           <EntitySet Name="ASSAYS_DMP" EntityType="Model.ASSAYS_DMP" />
           <EntitySet Name="ASSAYS_OR" EntityType="Model.ASSAYS_OR" />
@@ -2384,7 +2384,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="KEY" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
@@ -2403,7 +2403,7 @@
           <Property Name="GEOLOGIST" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="BLOCK_ZAPASOV" Relationship="Model.ASSAYS_FK00" FromRole="ASSAYS" ToRole="BLOCK_ZAPASOV" />
           <NavigationProperty Name="COLLAR" Relationship="Model.ASSAYS_FK01" FromRole="ASSAYS" ToRole="COLLAR" />
           <NavigationProperty Name="GEOLOGIST1" Relationship="Model.ASSAYS_FK02" FromRole="ASSAYS" ToRole="GEOLOGIST" />
@@ -2416,7 +2416,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="SECTOR" Type="Int32" />
@@ -2430,7 +2430,7 @@
           <Property Name="GEOLOGIST" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR_DMP" Relationship="Model.ASSAYS_DMP_FK00" FromRole="ASSAYS_DMP" ToRole="COLLAR_DMP" />
           <NavigationProperty Name="GEOLOGIST1" Relationship="Model.ASSAYS_DMP_FK01" FromRole="ASSAYS_DMP" ToRole="GEOLOGIST" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI" Relationship="Model.ASSAYS_DMP_FK02" FromRole="ASSAYS_DMP" ToRole="REESTR_VEDOMOSTEI" />
@@ -2440,7 +2440,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
           <Property Name="FROM" Type="Double" Nullable="false" />
@@ -2469,7 +2469,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="SECTOR" Type="Int32" />
@@ -2490,7 +2490,7 @@
           <Property Name="END_DATE" Type="DateTime" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR_STRG" Relationship="Model.ASSAYS_STRG_FK00" FromRole="ASSAYS_STRG" ToRole="COLLAR_STRG" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI_STRG" Relationship="Model.ASSAYS_STRG_FK01" FromRole="ASSAYS_STRG" ToRole="REESTR_VEDOMOSTEI_STRG" />
         </EntityType>
@@ -2498,7 +2498,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="KEY" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
@@ -2525,7 +2525,7 @@
           <Property Name="PIT" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="BLOCK_ZAPASOV" Relationship="Model.ASSAYS2_FK00" FromRole="ASSAYS2" ToRole="BLOCK_ZAPASOV" />
           <NavigationProperty Name="COLLAR2" Relationship="Model.ASSAYS2_FK01" FromRole="ASSAYS2" ToRole="COLLAR2" />
           <NavigationProperty Name="GEOLOGIST1" Relationship="Model.ASSAYS2_FK02" FromRole="ASSAYS2" ToRole="GEOLOGIST" />
@@ -2538,7 +2538,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" />
           <Property Name="KEY" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
@@ -2557,18 +2557,18 @@
           <Property Name="GEOLOGIST" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI" Relationship="Model.ASSAYS2_CS_FK00" FromRole="ASSAYS2_CS" ToRole="REESTR_VEDOMOSTEI" />
         </EntityType>
         <EntityType Name="BLOCK_ZAPASOV">
           <Key>
             <PropertyRef Name="RESERVERS_BLOCK" />
           </Key>
-          <Property Name="RESERVERS_BLOCK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RESERVERS_BLOCK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="CATEGORY" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS" Relationship="Model.ASSAYS_FK00" FromRole="BLOCK_ZAPASOV" ToRole="ASSAYS" />
           <NavigationProperty Name="ASSAYS2" Relationship="Model.ASSAYS2_FK00" FromRole="BLOCK_ZAPASOV" ToRole="ASSAYS2" />
         </EntityType>
@@ -2576,7 +2576,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="BENCH_ID" Type="Int32" Nullable="false" />
           <Property Name="LINE_ID" Type="Int32" Nullable="false" />
@@ -2588,7 +2588,7 @@
           <Property Name="DRILL_TYPE" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS" Relationship="Model.ASSAYS_FK01" FromRole="COLLAR" ToRole="ASSAYS" />
           <NavigationProperty Name="DRILLING_TYPE" Relationship="Model.COLLAR_FK00" FromRole="COLLAR" ToRole="DRILLING_TYPE" />
           <NavigationProperty Name="GORIZONT" Relationship="Model.COLLAR_FK01" FromRole="COLLAR" ToRole="GORIZONT" />
@@ -2599,7 +2599,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="XCOLLAR" Type="Double" Nullable="false" />
           <Property Name="YCOLLAR" Type="Double" Nullable="false" />
@@ -2607,7 +2607,7 @@
           <Property Name="ENDDEPTH" Type="Double" Nullable="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS_DMP" Relationship="Model.ASSAYS_DMP_FK00" FromRole="COLLAR_DMP" ToRole="ASSAYS_DMP" />
           <NavigationProperty Name="SURVEYS_DMP" Relationship="Model.SURVEYS_DMP_FK00" FromRole="COLLAR_DMP" ToRole="SURVEYS_DMP" />
         </EntityType>
@@ -2615,7 +2615,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
           <Property Name="XCOLLAR" Type="Double" Nullable="false" />
           <Property Name="YCOLLAR" Type="Double" Nullable="false" />
@@ -2630,7 +2630,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="XCOLLAR" Type="Double" Nullable="false" />
           <Property Name="YCOLLAR" Type="Double" Nullable="false" />
@@ -2638,7 +2638,7 @@
           <Property Name="ENDDEPTH" Type="Double" Nullable="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS_STRG" Relationship="Model.ASSAYS_STRG_FK00" FromRole="COLLAR_STRG" ToRole="ASSAYS_STRG" />
           <NavigationProperty Name="SURVEYS_STRG" Relationship="Model.SURVEYS_STRG_FK00" FromRole="COLLAR_STRG" ToRole="SURVEYS_STRG" />
         </EntityType>
@@ -2646,7 +2646,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="BENCH_ID" Type="Int32" Nullable="false" />
           <Property Name="LINE_ID" Type="Int32" Nullable="false" />
@@ -2659,7 +2659,7 @@
           <Property Name="DOMEN" Type="Int32" Nullable="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS2" Relationship="Model.ASSAYS2_FK01" FromRole="COLLAR2" ToRole="ASSAYS2" />
           <NavigationProperty Name="DOMEN1" Relationship="Model.COLLAR2_FK_DOMEN" FromRole="COLLAR2" ToRole="DOMEN" />
           <NavigationProperty Name="DRILLING_TYPE" Relationship="Model.COLLAR2_FK00" FromRole="COLLAR2" ToRole="DRILLING_TYPE" />
@@ -2682,12 +2682,12 @@
           <Key>
             <PropertyRef Name="DRILL_ID" />
           </Key>
-          <Property Name="DRILL_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DRILL_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="DRILL_TYPE" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="DIAMETR_DRILL" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR" Relationship="Model.COLLAR_FK00" FromRole="DRILLING_TYPE" ToRole="COLLAR" />
           <NavigationProperty Name="COLLAR2" Relationship="Model.COLLAR2_FK00" FromRole="DRILLING_TYPE" ToRole="COLLAR2" />
         </EntityType>
@@ -2695,7 +2695,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Sort" Type="Int32" />
           <Property Name="Year" Type="Int32" />
           <Property Name="Dat" Type="Int32" />
@@ -2705,7 +2705,7 @@
           <Property Name="Q_p" Type="Double" />
           <Property Name="Ccp_p" Type="Double" />
           <Property Name="M_p" Type="Double" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="Q_Mes" Relationship="Model.DUMP_BALANS_FK00" FromRole="DUMP_BALANS" ToRole="Q_Mes" />
           <NavigationProperty Name="Q_YEAR" Relationship="Model.DUMP_BALANS_FK01" FromRole="DUMP_BALANS" ToRole="Q_YEAR" />
         </EntityType>
@@ -2713,7 +2713,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Kre" Type="Int32" Nullable="false" />
           <Property Name="Deb" Type="Int32" Nullable="false" />
           <Property Name="Vol" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
@@ -2729,12 +2729,12 @@
           <Key>
             <PropertyRef Name="GEOLOGIST_ID" />
           </Key>
-          <Property Name="GEOLOGIST_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GEOLOGIST_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="GEOLOGIST_NAME" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LOGIN" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS" Relationship="Model.ASSAYS_FK02" FromRole="GEOLOGIST" ToRole="ASSAYS" />
           <NavigationProperty Name="ASSAYS_DMP" Relationship="Model.ASSAYS_DMP_FK01" FromRole="GEOLOGIST" ToRole="ASSAYS_DMP" />
           <NavigationProperty Name="ASSAYS2" Relationship="Model.ASSAYS2_FK02" FromRole="GEOLOGIST" ToRole="ASSAYS2" />
@@ -2746,11 +2746,11 @@
           <Key>
             <PropertyRef Name="BENCH_ID" />
           </Key>
-          <Property Name="BENCH_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BENCH_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BENCH_NAME" Type="Int32" Nullable="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR" Relationship="Model.COLLAR_FK01" FromRole="GORIZONT" ToRole="COLLAR" />
           <NavigationProperty Name="COLLAR2" Relationship="Model.COLLAR2_FK01" FromRole="GORIZONT" ToRole="COLLAR2" />
           <NavigationProperty Name="S_BLOK" Relationship="Model.FK_S_BLOK_GORIZONT" FromRole="GORIZONT" ToRole="S_BLOK" />
@@ -2762,22 +2762,22 @@
           <Key>
             <PropertyRef Name="HOLE_ID" />
           </Key>
-          <Property Name="HOLE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HOLE_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="HOLE_NAME" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR" Relationship="Model.COLLAR_FK02" FromRole="HOLE" ToRole="COLLAR" />
         </EntityType>
         <EntityType Name="JOURNAL">
           <Key>
             <PropertyRef Name="JOURNAL_ID" />
           </Key>
-          <Property Name="JOURNAL_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="JOURNAL_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="JOURNAL_NAME" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS" Relationship="Model.ASSAYS_FK03" FromRole="JOURNAL" ToRole="ASSAYS" />
           <NavigationProperty Name="ASSAYS2" Relationship="Model.ASSAYS2_FK03" FromRole="JOURNAL" ToRole="ASSAYS2" />
         </EntityType>
@@ -2785,12 +2785,12 @@
           <Key>
             <PropertyRef Name="LITO_ID" />
           </Key>
-          <Property Name="LITO_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LITO_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="LITO_COD" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="ROCK" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS" Relationship="Model.ASSAYS_FK04" FromRole="LITOLOGY" ToRole="ASSAYS" />
           <NavigationProperty Name="ASSAYS2" Relationship="Model.ASSAYS2_FK04" FromRole="LITOLOGY" ToRole="ASSAYS2" />
         </EntityType>
@@ -2798,11 +2798,11 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="MOVER1" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="QFACE" Relationship="Model.QFACE_FK03" FromRole="MOVER" ToRole="QFACE" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI_STRG" Relationship="Model.REESTR_VEDOMOSTEI_STRG_FK01" FromRole="MOVER" ToRole="REESTR_VEDOMOSTEI_STRG" />
           <NavigationProperty Name="S_DAY" Relationship="Model.S_DAY_FK01" FromRole="MOVER" ToRole="S_DAY" />
@@ -2811,31 +2811,31 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Mes" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="DUMP_BALANS" Relationship="Model.DUMP_BALANS_FK00" FromRole="Q_Mes" ToRole="DUMP_BALANS" />
         </EntityType>
         <EntityType Name="Q_pit">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Pit" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="S_DAY" Relationship="Model.S_DAY_FK02" FromRole="Q_pit" ToRole="S_DAY" />
         </EntityType>
         <EntityType Name="Q_sm">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Sm" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="Flows" Relationship="Model.FK_Flows_Q_sm" FromRole="Q_sm" ToRole="Flows" />
           <NavigationProperty Name="S_DAY" Relationship="Model.S_DAY_FK03" FromRole="Q_sm" ToRole="S_DAY" />
           <NavigationProperty Name="S_ORE_PIT" Relationship="Model.S_ORE_PIT_FK00" FromRole="Q_sm" ToRole="S_ORE_PIT" />
@@ -2845,27 +2845,27 @@
           <Key>
             <PropertyRef Name="Код" />
           </Key>
-          <Property Name="Код" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="God" Type="Int32" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="DUMP_BALANS" Relationship="Model.DUMP_BALANS_FK01" FromRole="Q_YEAR" ToRole="DUMP_BALANS" />
         </EntityType>
         <EntityType Name="Q_zone">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="R_zone" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="S_ORE_PIT" Relationship="Model.S_ORE_PIT_FK01" FromRole="Q_zone" ToRole="S_ORE_PIT" />
         </EntityType>
         <EntityType Name="QBLOK">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BENCH" Type="Int32" />
           <Property Name="CATEGORY" Type="Int32" />
           <Property Name="d" Type="Double" />
@@ -2875,14 +2875,14 @@
           <Property Name="M" Type="Double" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="GORIZONT" Relationship="Model.QBLOK_FK00" FromRole="QBLOK" ToRole="GORIZONT" />
         </EntityType>
         <EntityType Name="QCONTROL">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="VES_SAMPLE" Type="Double" />
           <Property Name="AU" Type="Double" />
@@ -2897,7 +2897,7 @@
           <Property Name="BLANK" Type="Int32" Nullable="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI" Relationship="Model.QCONTROL_FK00" FromRole="QCONTROL" ToRole="REESTR_VEDOMOSTEI" />
         </EntityType>
         <EntityType Name="QFACE">
@@ -2911,7 +2911,7 @@
             <PropertyRef Name="LENGTH" />
             <PropertyRef Name="BLANK" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="MOVER" Type="Int32" Nullable="false" />
           <Property Name="BENCH_ID" Type="Int32" Nullable="false" />
@@ -2932,7 +2932,7 @@
           <Property Name="GEOLOGIST" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="GEOLOGIST1" Relationship="Model.QFACE_FK00" FromRole="QFACE" ToRole="GEOLOGIST" />
           <NavigationProperty Name="GORIZONT" Relationship="Model.QFACE_FK01" FromRole="QFACE" ToRole="GORIZONT" />
           <NavigationProperty Name="MOVER1" Relationship="Model.QFACE_FK03" FromRole="QFACE" ToRole="MOVER" />
@@ -2942,13 +2942,13 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="RANG1" Type="Int32" />
           <Property Name="TYPE_RANG" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
           <Property Name="ENG_RANG" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS" Relationship="Model.ASSAYS_FK05" FromRole="RANG" ToRole="ASSAYS" />
           <NavigationProperty Name="ASSAYS2" Relationship="Model.ASSAYS2_FK05" FromRole="RANG" ToRole="ASSAYS2" />
         </EntityType>
@@ -2956,7 +2956,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BLANK_ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="DATE_FORW" Type="DateTime" />
           <Property Name="PLACE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
@@ -2966,7 +2966,7 @@
           <Property Name="POSTUP_DAT" Type="DateTime" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS" Relationship="Model.ASSAYS_FK06" FromRole="REESTR_VEDOMOSTEI" ToRole="ASSAYS" />
           <NavigationProperty Name="ASSAYS_DMP" Relationship="Model.ASSAYS_DMP_FK02" FromRole="REESTR_VEDOMOSTEI" ToRole="ASSAYS_DMP" />
           <NavigationProperty Name="ASSAYS2" Relationship="Model.ASSAYS2_FK06" FromRole="REESTR_VEDOMOSTEI" ToRole="ASSAYS2" />
@@ -2979,7 +2979,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BLANK_ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="DATE_FORW" Type="DateTime" />
           <Property Name="PLACE" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
@@ -2991,7 +2991,7 @@
           <Property Name="POSTUP_DAT" Type="DateTime" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS_STRG" Relationship="Model.ASSAYS_STRG_FK01" FromRole="REESTR_VEDOMOSTEI_STRG" ToRole="ASSAYS_STRG" />
           <NavigationProperty Name="GEOLOGIST1" Relationship="Model.REESTR_VEDOMOSTEI_STRG_FK00" FromRole="REESTR_VEDOMOSTEI_STRG" ToRole="GEOLOGIST" />
           <NavigationProperty Name="MOVER1" Relationship="Model.REESTR_VEDOMOSTEI_STRG_FK01" FromRole="REESTR_VEDOMOSTEI_STRG" ToRole="MOVER" />
@@ -3003,23 +3003,23 @@
           <Key>
             <PropertyRef Name="EX_LINE_COD" />
           </Key>
-          <Property Name="EX_LINE_COD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EX_LINE_COD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="EXPL_LINE_NAME" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR" Relationship="Model.COLLAR_FK03" FromRole="RL_EXPLO" ToRole="COLLAR" />
         </EntityType>
         <EntityType Name="RL_EXPLO2">
           <Key>
             <PropertyRef Name="EX_LINE_COD" />
           </Key>
-          <Property Name="EX_LINE_COD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EX_LINE_COD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="EXPL_LINE_NAME" Type="String" MaxLength="4" Unicode="true" FixedLength="false" />
           <Property Name="EXPL_LINE_DATE" Type="DateTime" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR2" Relationship="Model.COLLAR2_FK02" FromRole="RL_EXPLO2" ToRole="COLLAR2" />
           <NavigationProperty Name="S_BLOK" Relationship="Model.FK_S_BLOK_RL_EXPLO2" FromRole="RL_EXPLO2" ToRole="S_BLOK" />
           <NavigationProperty Name="S_DAY" Relationship="Model.S_DAY_FK04" FromRole="RL_EXPLO2" ToRole="S_DAY" />
@@ -3028,7 +3028,7 @@
           <Key>
             <PropertyRef Name="ID_RV_GEO" />
           </Key>
-          <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BLANK_ID" Type="Int32" Nullable="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
           <Property Name="SFROM" Type="Int32" />
@@ -3037,7 +3037,7 @@
           <Property Name="HOLE" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI" Relationship="Model.RV_GEO_FK00" FromRole="RV_GEO" ToRole="REESTR_VEDOMOSTEI" />
           <NavigationProperty Name="RV_GRP" Relationship="Model.RV_GRP_FK00" FromRole="RV_GEO" ToRole="RV_GRP" />
           <NavigationProperty Name="RV_PAL" Relationship="Model.RV_PAL_FK00" FromRole="RV_GEO" ToRole="RV_PAL" />
@@ -3046,14 +3046,14 @@
           <Key>
             <PropertyRef Name="ID_RV_GEO" />
           </Key>
-          <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BLANK_ID" Type="Int32" Nullable="false" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
           <Property Name="SFROM" Type="Int32" />
           <Property Name="STO" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI_STRG" Relationship="Model.RV_GEO_STRG_FK00" FromRole="RV_GEO_STRG" ToRole="REESTR_VEDOMOSTEI_STRG" />
           <NavigationProperty Name="RV_GRP_STRG" Relationship="Model.RV_GRP_STRG_FK00" FromRole="RV_GEO_STRG" ToRole="RV_GRP_STRG" />
           <NavigationProperty Name="RV_PAL_STRG" Relationship="Model.RV_PAL_STRG_FK00" FromRole="RV_GEO_STRG" ToRole="RV_PAL_STRG" />
@@ -3062,24 +3062,24 @@
           <Key>
             <PropertyRef Name="ID_RV_GRP" />
           </Key>
-          <Property Name="ID_RV_GRP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_RV_GRP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" />
           <Property Name="VES" Type="Double" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="RV_GEO" Relationship="Model.RV_GRP_FK00" FromRole="RV_GRP" ToRole="RV_GEO" />
         </EntityType>
         <EntityType Name="RV_GRP_STRG">
           <Key>
             <PropertyRef Name="ID_RV_GRP" />
           </Key>
-          <Property Name="ID_RV_GRP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_RV_GRP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" />
           <Property Name="VES" Type="Double" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="RV_GEO_STRG" Relationship="Model.RV_GRP_STRG_FK00" FromRole="RV_GRP_STRG" ToRole="RV_GEO_STRG" />
         </EntityType>
         <EntityType Name="RV_PAL">
@@ -3087,7 +3087,7 @@
             <PropertyRef Name="ID_RV_PAL" />
             <PropertyRef Name="ID_RV_GEO" />
           </Key>
-          <Property Name="ID_RV_PAL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_RV_PAL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" />
           <Property Name="Au" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
           <Property Name="mAu1" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
@@ -3103,14 +3103,14 @@
           <Property Name="C" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="RV_GEO" Relationship="Model.RV_PAL_FK00" FromRole="RV_PAL" ToRole="RV_GEO" />
         </EntityType>
         <EntityType Name="RV_PAL_STRG">
           <Key>
             <PropertyRef Name="ID_RV_PAL" />
           </Key>
-          <Property Name="ID_RV_PAL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_RV_PAL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="ID_RV_GEO" Type="Int32" Nullable="false" />
           <Property Name="Au" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
           <Property Name="As" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
@@ -3126,14 +3126,14 @@
           <Property Name="C" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="RV_GEO_STRG" Relationship="Model.RV_PAL_STRG_FK00" FromRole="RV_PAL_STRG" ToRole="RV_GEO_STRG" />
         </EntityType>
         <EntityType Name="S_BLOK">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Pit" Type="Int32" Nullable="false" />
           <Property Name="END_DATE" Type="DateTime" />
           <Property Name="Bench" Type="Int32" Nullable="false" />
@@ -3147,7 +3147,7 @@
           <Property Name="Comment" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="GORIZONT" Relationship="Model.FK_S_BLOK_GORIZONT" FromRole="S_BLOK" ToRole="GORIZONT" />
           <NavigationProperty Name="RL_EXPLO2" Relationship="Model.FK_S_BLOK_RL_EXPLO2" FromRole="S_BLOK" ToRole="RL_EXPLO2" />
         </EntityType>
@@ -3161,7 +3161,7 @@
             <PropertyRef Name="subBlok" />
             <PropertyRef Name="Rang" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Pit" Type="Int32" Nullable="false" />
           <Property Name="END_DATE" Type="DateTime" Nullable="false" />
           <Property Name="Smena" Type="Int32" Nullable="false" />
@@ -3177,7 +3177,7 @@
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
           <Property Name="Host" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="GORIZONT" Relationship="Model.S_DAY_FK00" FromRole="S_DAY" ToRole="GORIZONT" />
           <NavigationProperty Name="MOVER1" Relationship="Model.S_DAY_FK01" FromRole="S_DAY" ToRole="MOVER" />
           <NavigationProperty Name="Q_pit" Relationship="Model.S_DAY_FK02" FromRole="S_DAY" ToRole="Q_pit" />
@@ -3188,7 +3188,7 @@
           <Key>
             <PropertyRef Name="Код" />
           </Key>
-          <Property Name="Код" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="END_DATE" Type="DateTime" />
           <Property Name="SMENA" Type="Int32" />
           <Property Name="Sektor" Type="Int32" />
@@ -3201,7 +3201,7 @@
           <Property Name="Mill2" Type="Double" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="Q_sm" Relationship="Model.S_ORE_PIT_FK00" FromRole="S_ORE_PIT" ToRole="Q_sm" />
           <NavigationProperty Name="Q_zone" Relationship="Model.S_ORE_PIT_FK01" FromRole="S_ORE_PIT" ToRole="Q_zone" />
           <NavigationProperty Name="SECTOR" Relationship="Model.S_ORE_PIT_FK02" FromRole="S_ORE_PIT" ToRole="SECTOR" />
@@ -3211,7 +3211,7 @@
             <PropertyRef Name="AreaID" />
             <PropertyRef Name="DateSaldo" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="AreaID" Type="Int32" Nullable="false" />
           <Property Name="DateSaldo" Type="DateTime" Nullable="false" />
           <Property Name="V" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
@@ -3223,7 +3223,7 @@
           <Key>
             <PropertyRef Name="Код" />
           </Key>
-          <Property Name="Код" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Код" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="END_DATE" Type="DateTime" />
           <Property Name="Smena" Type="Int32" />
           <Property Name="Q_ZIF" Type="Double" />
@@ -3231,18 +3231,18 @@
           <Property Name="M" Type="Double" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="Q_sm" Relationship="Model.S_ZIF_FK00" FromRole="S_ZIF" ToRole="Q_sm" />
         </EntityType>
         <EntityType Name="SECTOR">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="SECTOR1" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="ASSAYS_DMP" Relationship="Model.ASSAYS_DMP_FK03" FromRole="SECTOR" ToRole="ASSAYS_DMP" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI_STRG" Relationship="Model.REESTR_VEDOMOSTEI_STRG_FK02" FromRole="SECTOR" ToRole="REESTR_VEDOMOSTEI_STRG" />
           <NavigationProperty Name="S_ORE_PIT" Relationship="Model.S_ORE_PIT_FK02" FromRole="SECTOR" ToRole="S_ORE_PIT" />
@@ -3251,7 +3251,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="SAMPLE" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
           <Property Name="FROM" Type="Double" Nullable="false" />
           <Property Name="TO" Type="Double" Nullable="false" />
@@ -3269,7 +3269,7 @@
           <Property Name="GEOLOGIST" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="GEOLOGIST1" Relationship="Model.SFACE_FK00" FromRole="SFACE" ToRole="GEOLOGIST" />
           <NavigationProperty Name="REESTR_VEDOMOSTEI_STRG" Relationship="Model.SFACE_FK01" FromRole="SFACE" ToRole="REESTR_VEDOMOSTEI_STRG" />
         </EntityType>
@@ -3277,7 +3277,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="Descr" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="true" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
@@ -3290,7 +3290,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="AreaID" Type="Int32" Nullable="false" />
           <Property Name="Direction" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="true" />
           <Property Name="RepPlace" Type="Int32" />
@@ -3304,7 +3304,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="AreaID" Type="Int32" />
           <Property Name="RepPlace" Type="Int32" Nullable="false" />
           <Property Name="LastUserID" Type="Int32" />
@@ -3315,21 +3315,21 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="AT" Type="Int32" />
           <Property Name="BRG" Type="Int32" />
           <Property Name="DIP" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR_DMP" Relationship="Model.SURVEYS_DMP_FK00" FromRole="SURVEYS_DMP" ToRole="COLLAR_DMP" />
         </EntityType>
         <EntityType Name="SURVEYS_OR">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="AT" Type="Int32" />
           <Property Name="BRG" Type="Int32" />
@@ -3341,14 +3341,14 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="BHID" Type="Int32" Nullable="false" />
           <Property Name="AT" Type="Int32" />
           <Property Name="BRG" Type="Int32" />
           <Property Name="DIP" Type="Int32" />
           <Property Name="LastUserID" Type="Int32" />
           <Property Name="LastDT" Type="DateTime" />
-          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="upsize_ts" Type="Binary" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <NavigationProperty Name="COLLAR_STRG" Relationship="Model.SURVEYS_STRG_FK00" FromRole="SURVEYS_STRG" ToRole="COLLAR_STRG" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -3357,7 +3357,7 @@
           </Key>
           <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
           <Property Name="principal_id" Type="Int32" Nullable="false" />
-          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
@@ -4181,7 +4181,7 @@
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="ModelDB">
           <EntitySetMapping Name="ASSAYS">
             <EntityTypeMapping TypeName="Model.ASSAYS">
@@ -5073,7 +5073,7 @@
     </edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
-  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <Connection>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />

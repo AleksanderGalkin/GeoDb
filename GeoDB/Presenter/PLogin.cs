@@ -5,6 +5,7 @@ using System.Text;
 using GeoDB.Service.DataAccess.Interface;
 using GeoDbUserInterface.View;
 using GeoDB.Presenter.Interface;
+using System.Data.Sql;
 
 namespace GeoDB.Presenter
 {
@@ -70,7 +71,10 @@ namespace GeoDB.Presenter
         private void On_view_clickSeekSqlServers(object sender, EventArgs e)
         {
             List < string >  listOfServers = new List<string>();
-            System.Data.DataTable dt = System.Data.Sql.SqlDataSourceEnumerator.Instance.GetDataSources();
+            System.Data.DataTable dt = SqlDataSourceEnumerator.Instance.GetDataSources();
+            dt = SqlDataSourceEnumerator.Instance.GetDataSources();
+            System.Data.DataRow[] rows = dt.Select();
+
             foreach (System.Data.DataRow dr in dt.Rows)
             {
                 //Вывод найденной информации о серверах
